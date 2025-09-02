@@ -3,8 +3,8 @@
 // Input: X0 = first value, X1 = second value, X2 = start position, X3 = count
 // Output: X0 = 1 if bit ranges are equal, 0 if different
 
-.global compare_bits
-compare_bits:
+.global bit_compare
+bit_compare:
     MOV X4, #1            // Create base mask
     LSL X4, X4, X3        // Shift by count (creates 2^count)
     SUB X4, X4, #1        // Subtract 1 (creates mask with count bits)
