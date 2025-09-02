@@ -2,48 +2,35 @@
 
 > **⚠️ Early Development Notice**: This project is not close to completion. This repository contains only some of the foundational functions planned for the E language. The current implementation represents the beginning stages of development, focusing on core bit manipulation operations as a foundation for the larger language ecosystem.
 
-## What Makes E Different
+## Current State
 
-E is a modern programming language designed to give developers unprecedented control and flexibility. Unlike traditional languages that force you into rigid paradigms, E adapts to your needs - whether you're working with individual bits or building complex applications.
+This repository contains the initial development of the E programming language. The language is currently in very early stages and will not be useful for a long time. What exists now is:
 
-### Core Philosophy
+- **Bit manipulation functions**: 40+ ARM64 assembly functions for bit operations
+- **ARM64 instruction reference**: Documentation of ARM64 instructions
+- **Basic project structure**: Foundation for future language development
 
-- **Developer Freedom**: Work at any level of abstraction - from individual bits to high-level constructs
-- **Memory Safety**: Compiler prevents common errors without slowing down your code
-- **Hardware Optimization**: Built for ARM64 to take full advantage of modern processors
-- **Modular Design**: Add only the features you need through the language family system
-- **Predictable Behavior**: Know exactly what your code will do and how fast it will run
+## Technical Vision
 
-### Why Developers Choose E
+E is designed to be a programming language that:
 
-E solves real problems that developers face every day:
-
-- **No More Memory Bugs**: Compiler catches memory errors before they crash your program
-- **Choose Your Complexity**: Start simple with basic operations, scale up to advanced features
-- **Modern Architecture**: Built for today's ARM64 processors, not legacy systems
-- **Extensible Ecosystem**: Need graphics? Add EUI. Need math? Add EMA. Only load what you use
+- **Maps directly to ARM64**: 1:1 mapping between E syntax and ARM64 assembly
+- **Provides bit-level control**: Direct access to individual bit operations
+- **Enforces memory safety**: Compiler rules to prevent common memory errors
+- **Supports modular extensions**: Language family system (EMA, EUI, EDA, etc.)
 
 ## Code Quality
 
-### What You Get
+### Current Implementation
 
-E delivers production-ready code that you can trust:
+The existing code follows these standards:
 
-- **Battle-Tested Functions**: 40+ bit manipulation functions, each thoroughly tested and optimized
-- **Clean, Readable Code**: Consistent naming and documentation make the codebase easy to understand and maintain
-- **No Hidden Dependencies**: Pure ARM64 assembly means no surprise library requirements or version conflicts
-- **Professional Standards**: Every function follows industry best practices for reliability and performance
+- **ARM64 Assembly**: All functions written in pure ARM64 assembly
+- **Consistent Naming**: Technical function names with `bit_` prefix
+- **Documentation**: Each function documented with input/output specifications
+- **Optimized Algorithms**: Uses ARM64 hardware instructions where possible
 
-### Built for Real-World Use
-
-- **Cross-Platform Compatibility**: Works on any ARM64 system - from mobile devices to servers
-- **Memory Safe**: All operations designed to prevent crashes and security vulnerabilities
-- **Well Documented**: Clear documentation for every function, making it easy to use and extend
-- **Modular Design**: Use only what you need, keep your applications lean and fast
-
-## Folder/File Structure
-
-### Repository Organization
+### File Structure
 
 ```
 /Users/meesfatels/Documents/Proggraming/Eidolon/Languages/Compiled/1/
@@ -95,61 +82,45 @@ E delivers production-ready code that you can trust:
 └── README.md                       # This file
 ```
 
-### Naming Conventions
-
-- **Function Names**: Technical precision with `bit_` prefix (e.g., `bit_set`, `bit_and`, `bit_popcount`)
-- **File Names**: Exact technical representation (e.g., `bit_set.s`, `bit_rotate_left.s`)
-- **Directory Structure**: Logical categorization by operation type
-- **Documentation**: Consistent format with input/output specifications
-
 ## E Language Overview
 
 ### Core E Language
 
-E starts simple but scales to meet your needs:
+E is planned to be a simple language that:
 
-- **Clean Syntax**: E code is readable and intuitive, mapping directly to ARM64 instructions
-- **Bit-Level Control**: When you need precision, work with individual bits
-- **Memory Safety**: The compiler catches errors before they become bugs
-- **No Runtime Overhead**: Your code runs directly on the hardware, no interpreters or virtual machines
+- **Maps to ARM64**: Direct translation from E syntax to ARM64 assembly
+- **Provides bit control**: Access to individual bit operations
+- **Enforces memory safety**: Compiler rules to prevent memory errors
+- **Runs natively**: No interpreters or virtual machines
 
-### Language Family - Choose Your Tools
+### Language Family System
 
-E grows with your project through specialized language modules:
+The planned language family includes:
 
-- **EMA (Eidolon Math)**: Advanced mathematics, statistics, and scientific computing
-- **EUI (Eidolon UI)**: Modern user interfaces and graphics programming
-- **EDA (Eidolon Database)**: Database operations and data management
-- **EGPU (Eidolon GPU)**: Graphics processing and parallel computation
-- **ENET (Eidolon Network)**: Network programming and web development
-- **EAI (Eidolon AI)**: Machine learning and artificial intelligence
-- **EBC (Eidolon Blockchain)**: Cryptocurrency and blockchain development
+- **EMA (Eidolon Math)**: Mathematics and scientific computing
+- **EUI (Eidolon UI)**: User interfaces and graphics
+- **EDA (Eidolon Database)**: Database operations
+- **EGPU (Eidolon GPU)**: Graphics processing
+- **ENET (Eidolon Network)**: Network programming
+- **EAI (Eidolon AI)**: Machine learning
+- **EBC (Eidolon Blockchain)**: Blockchain development
 
-### How It Works
+### Planned Syntax
 
-Add features as you need them with simple includes:
+The language is designed to use C-style includes:
 
 ```e
-#include <EMA>    // Now you have advanced math functions
-#include <EUI>    // Add beautiful user interfaces
-#include <EDA>    // Connect to databases
+#include <EMA>    // Advanced math functions
+#include <EUI>    // User interface features
+#include <EDA>    // Database operations
 ```
 
-**Benefits:**
-- **Start Simple**: Begin with basic E, add complexity as needed
-- **Stay Lean**: Only load the features you actually use
-- **Mix and Match**: Combine different modules for your specific needs
-- **Easy Updates**: Update individual modules without breaking your code
+## Development Status
 
-### Perfect For
-
-E is ideal for developers who want:
-
-- **Control**: Work at the level of detail that makes sense for your project
-- **Safety**: Catch errors early with compiler-enforced memory safety
-- **Flexibility**: Choose from simple bit operations to complex high-level features
-- **Modern Tools**: Built for today's ARM64 processors and development workflows
-- **Growing Projects**: Start small and scale up as your application evolves
+**Current State**: Very early development
+**Timeline**: Will not be useful for a long time
+**Focus**: Building foundational bit manipulation functions
+**Next Steps**: Develop compiler and basic language syntax
 
 ---
 
