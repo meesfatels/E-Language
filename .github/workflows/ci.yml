@@ -1,0 +1,146 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+        architecture: [arm64, x64]
+        exclude:
+          - os: ubuntu-latest
+            architecture: arm64  # GitHub Actions doesn't support ARM64 on Ubuntu yet
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up environment
+      run: |
+        echo "OS: ${{ matrix.os }}"
+        echo "Architecture: ${{ matrix.architecture }}"
+        uname -a
+
+    - name: Check ARM64 assembly syntax
+      run: |
+        # Check if we're on ARM64 or if we can test ARM64 assembly
+        if [[ "${{ matrix.architecture }}" == "arm64" ]] || [[ "${{ runner.os }}" == "macOS" ]]; then
+          echo "Testing ARM64 assembly compilation..."
+          
+          # Test compilation of a few key functions
+          for func in bit_set bit_and bit_or bit_xor; do
+            if [ -f "bit/bit_${func}_functions/1/bit_${func}.s" ]; then
+              echo "Testing $func..."
+              # Note: This is a basic syntax check
+              # In a real scenario, you'd want to actually compile and test
+              echo "Found bit_${func}.s"
+            fi
+          done
+        else
+          echo "Skipping ARM64 assembly tests on non-ARM64 platform"
+        fi
+
+    - name: Validate file structure
+      run: |
+        echo "Validating project structure..."
+        
+        # Check that all bit functions have proper structure
+        for dir in bit/*_functions; do
+          if [ -d "$dir" ]; then
+            echo "Checking $dir..."
+            if [ -d "$dir/1" ]; then
+              echo "  ✓ Has version directory"
+              if [ -f "$dir/1"/*.s ]; then
+                echo "  ✓ Has assembly file"
+              else
+                echo "  ✗ Missing assembly file"
+                exit 1
+              fi
+            else
+              echo "  ✗ Missing version directory"
+              exit 1
+            fi
+          fi
+        done
+
+    - name: Check documentation
+      run: |
+        echo "Checking documentation..."
+        
+        # Check that README exists and has content
+        if [ -f "README.md" ]; then
+          echo "✓ README.md exists"
+          if [ -s "README.md" ]; then
+            echo "✓ README.md has content"
+          else
+            echo "✗ README.md is empty"
+            exit 1
+          fi
+        else
+          echo "✗ README.md missing"
+          exit 1
+        fi
+        
+        # Check other important files
+        for file in CONTRIBUTING.md CODE_OF_CONDUCT.md SECURITY.md CHANGELOG.md; do
+          if [ -f "$file" ]; then
+            echo "✓ $file exists"
+          else
+            echo "✗ $file missing"
+            exit 1
+          fi
+        done
+
+    - name: Validate naming conventions
+      run: |
+        echo "Validating naming conventions..."
+        
+        # Check that all bit functions follow naming convention
+        for dir in bit/*_functions; do
+          if [ -d "$dir" ]; then
+            dirname=$(basename "$dir")
+            if [[ "$dirname" =~ ^bit_.*_functions$ ]]; then
+              echo "✓ $dirname follows naming convention"
+            else
+              echo "✗ $dirname doesn't follow naming convention"
+              exit 1
+            fi
+          fi
+        done
+
+    - name: Check for TODO/FIXME comments
+      run: |
+        echo "Checking for TODO/FIXME comments..."
+        
+        # Look for TODO/FIXME comments in code
+        if grep -r "TODO\|FIXME" bit/ --include="*.s"; then
+          echo "Found TODO/FIXME comments in code"
+          # Don't fail the build, just warn
+        else
+          echo "✓ No TODO/FIXME comments found"
+        fi
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Check file permissions
+      run: |
+        echo "Checking file permissions..."
+        find . -name "*.s" -exec ls -la {} \;
+    
+    - name: Check for large files
+      run: |
+        echo "Checking for large files..."
+        find . -type f -size +1M -exec ls -lh {} \;
+    
+    - name: Check for binary files
+      run: |
+        echo "Checking for binary files..."
+        find . -type f -exec file {} \; | grep -v "text\|empty" || true

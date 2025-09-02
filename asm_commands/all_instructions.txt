@@ -1,0 +1,842 @@
+ABS: Absolute value.
+ADC: Add with carry.
+ADCS: Add with carry, setting flags.
+ADDG: Add with tag.
+ADDPT: Add checked pointer.
+ADR: Form PC-relative address.
+ADRP: Form PC-relative address to 4KB page.
+APAS: Associate physical address space: an alias of SYS.
+ASRV: Arithmetic shift right variable.
+AT: Address translate: an alias of SYS.
+AUTIA171615: Authenticate instruction address, using key A.
+AUTIASPPC: Authenticate return address using key A, using an immediate offset.
+AUTIASPPCR: Authenticate return address using key A, using a register.
+AUTIB171615: Authenticate instruction address, using key B.
+AUTIBSPPC: Authenticate return address using key B, using an immediate offset.
+AUTIBSPPCR: Authenticate return address using key B, using a register.
+AXFLAG: Convert floating-point condition flags from Arm to external format.
+BFC: Bitfield clear: an alias of BFM.
+BFI: Bitfield insert: an alias of BFM.
+BFM: Bitfield move.
+BFXIL: Bitfield extract and insert at low end: an alias of BFM.
+BL: Branch with link.
+BLR: Branch with link to register.
+BR: Branch to register.
+BRB: Branch record buffer: an alias of SYS.
+BRK: Breakpoint instruction.
+BTI: Branch target identification.
+CBBLE: Compare signed less than or equal bytes and branch: an alias of CBB<cc>.
+CBBLO: Compare unsigned lower than bytes and branch: an alias of CBB<cc>.
+CBBLS: Compare unsigned lower than or equal bytes and branch: an alias of CBB<cc>.
+CBBLT: Compare signed less than bytes and branch: an alias of CBB<cc>.
+CBHLE: Compare signed less than or equal halfwords and branch: an alias of CBH<cc>.
+CBHLO: Compare unsigned lower than halfwords and branch: an alias of CBH<cc>.
+CBHLS: Compare unsigned lower than or equal halfwords and branch: an alias of CBH<cc>.
+CBHLT: Compare signed less than halfwords and branch: an alias of CBH<cc>.
+CBNZ: Compare and branch on nonzero.
+CBZ: Compare and branch on zero.
+CFINV: Invert carry flag.
+CFP: Control flow prediction restriction by context: an alias of SYS.
+CHKFEAT: Check feature status.
+CINC: Conditional increment: an alias of CSINC.
+CINV: Conditional invert: an alias of CSINV.
+CLRBHB: Clear branch history.
+CLREX: Clear exclusive.
+CLS: Count leading sign bits.
+CLZ: Count leading zeros.
+CMPP: Compare with tag: an alias of SUBPS.
+CNEG: Conditional negate: an alias of CSNEG.
+CNT: Count bits.
+COSP: Clear other speculative prediction restriction by context: an alias of SYS.
+CPP: Cache prefetch prediction restriction by context: an alias of SYS.
+CSDB: Consumption of speculative data barrier.
+CSEL: Conditional select.
+CSET: Conditional set: an alias of CSINC.
+CSETM: Conditional set mask: an alias of CSINV.
+CSINC: Conditional select increment.
+CSINV: Conditional select invert.
+CSNEG: Conditional select negation.
+CTZ: Count trailing zeros.
+DC: Data cache operation: an alias of SYS.
+DCPS1: Debug change PE state to EL1.
+DCPS2: Debug change PE state to EL2.
+DCPS3: Debug change PE state to EL3.
+DGH: Data gathering hint.
+DMB: Data memory barrier.
+DRPS: Debug restore PE state.
+DSB: Data synchronization barrier.
+DVP: Data value prediction restriction by context: an alias of SYS.
+ERET: Exception return.
+ESB: Error synchronization barrier.
+EXTR: Extract register.
+GCSB: Guarded Control Stack barrier.
+GCSPOPCX: Guarded Control Stack pop and compare exception return record: an alias of SYS.
+GCSPOPM: Guarded Control Stack pop: an alias of SYSL.
+GCSPOPX: Guarded Control Stack pop exception return record: an alias of SYS.
+GCSPUSHM: Guarded Control Stack push: an alias of SYS.
+GCSPUSHX: Guarded Control Stack push exception return record: an alias of SYS.
+GCSSS1: Guarded Control Stack switch stack 1: an alias of SYS.
+GCSSS2: Guarded Control Stack switch stack 2: an alias of SYSL.
+GCSSTR: Guarded Control Stack store register.
+GCSSTTR: Guarded Control Stack store register (unprivileged).
+GMI: Tag mask insert.
+HINT: Hint instruction.
+HLT: Halt instruction.
+HVC: Hypervisor call.
+IC: Instruction cache operation: an alias of SYS.
+IRG: Insert random tag.
+ISB: Instruction synchronization barrier.
+LD64B: Single-copy atomic 64-byte Load.
+LDAPR: Load-acquire RCpc register.
+LDAPRB: Load-acquire RCpc register byte.
+LDAPRH: Load-acquire RCpc register halfword.
+LDAPUR: Load-acquire RCpc register (unscaled).
+LDAPURB: Load-acquire RCpc register byte (unscaled).
+LDAPURH: Load-acquire RCpc register halfword (unscaled).
+LDAPURSB: Load-acquire RCpc register signed byte (unscaled).
+LDAPURSH: Load-acquire RCpc register signed halfword (unscaled).
+LDAPURSW: Load-acquire RCpc register signed word (unscaled).
+LDAR: Load-acquire register.
+LDARB: Load-acquire register byte.
+LDARH: Load-acquire register halfword.
+LDATXR: Load-acquire unprivileged exclusive register.
+LDAXP: Load-acquire exclusive pair of registers.
+LDAXR: Load-acquire exclusive register.
+LDAXRB: Load-acquire exclusive register byte.
+LDAXRH: Load-acquire exclusive register halfword.
+LDG: Load Allocation Tag.
+LDGM: Load tag multiple.
+LDIAPP: Load-Acquire RCpc ordered pair of registers.
+LDLAR: Load LOAcquire register.
+LDLARB: Load LOAcquire register byte.
+LDLARH: Load LOAcquire register halfword.
+LDNP: Load pair of registers, with non-temporal hint.
+LDP: Load pair of registers.
+LDPSW: Load pair of registers signed word.
+LDTNP: Load unprivileged pair of registers, with non-temporal hint.
+LDTP: Load unprivileged pair of registers.
+LDTR: Load register (unprivileged).
+LDTRB: Load register byte (unprivileged).
+LDTRH: Load register halfword (unprivileged).
+LDTRSB: Load register signed byte (unprivileged).
+LDTRSH: Load register signed halfword (unprivileged).
+LDTRSW: Load register signed word (unprivileged).
+LDTXR: Load unprivileged exclusive register.
+LDUR: Load register (unscaled).
+LDURB: Load register byte (unscaled).
+LDURH: Load register halfword (unscaled).
+LDURSB: Load register signed byte (unscaled).
+LDURSH: Load register signed halfword (unscaled).
+LDURSW: Load register signed word (unscaled).
+LDXP: Load exclusive pair of registers.
+LDXR: Load exclusive register.
+LDXRB: Load exclusive register byte.
+LDXRH: Load exclusive register halfword.
+LSLV: Logical shift left variable.
+LSRV: Logical shift right variable.
+MADD: Multiply-add.
+MADDPT: Multiply-add checked pointer.
+MNEG: Multiply-negate: an alias of MSUB.
+MOVK: Move wide with keep.
+MOVN: Move wide with NOT.
+MOVZ: Move wide with zero.
+MRRS: Move System register to two adjacent general-purpose registers.
+MRS: Move System register to general-purpose register.
+MSRR: Move two adjacent general-purpose registers to System register.
+MSUB: Multiply-subtract.
+MSUBPT: Multiply-subtract checked pointer.
+MUL: Multiply: an alias of MADD.
+MVN: Bitwise NOT: an alias of ORN (shifted register).
+NEGS: Negate, setting flags: an alias of SUBS (shifted register).
+NGC: Negate with carry: an alias of SBC.
+NGCS: Negate with carry, setting flags: an alias of SBCS.
+NOP: No operation.
+PACGA: Pointer Authentication Code, using generic key.
+PACIA171615: Pointer Authentication Code for instruction address, using key A.
+PACIASPPC: Pointer Authentication Code for return address, using key A.
+PACIB171615: Pointer Authentication Code for instruction address, using key B.
+PACIBSPPC: Pointer Authentication Code for return address, using key B.
+PACM: Pointer authentication modifier.
+PACNBIASPPC: Pointer Authentication Code for return address, using key A, not a branch target.
+PACNBIBSPPC: Pointer Authentication Code for return address, using key B, not a branch target.
+PRFUM: Prefetch memory (unscaled offset).
+PSB: Profiling synchronization barrier.
+PSSBB: Physical speculative store bypass barrier: an alias of DSB.
+RBIT: Reverse bits.
+RET: Return from subroutine.
+REV: Reverse bytes.
+REV16: Reverse bytes in 16-bit halfwords.
+REV32: Reverse bytes in 32-bit words.
+REV64: Reverse bytes: an alias of REV.
+RMIF: Rotate, mask insert flags.
+RORV: Rotate right variable.
+RPRFM: Range prefetch memory.
+SB: Speculation barrier.
+SBC: Subtract with carry.
+SBCS: Subtract with carry, setting flags.
+SBFIZ: Signed bitfield insert in zeros: an alias of SBFM.
+SBFM: Signed bitfield move.
+SBFX: Signed bitfield extract: an alias of SBFM.
+SDIV: Signed divide.
+SEV: Send event.
+SEVL: Send event local.
+SMADDL: Signed multiply-add long.
+SMC: Secure monitor call.
+SMNEGL: Signed multiply-negate long: an alias of SMSUBL.
+SMSTART: Enables access to Streaming SVE mode and SME architectural state: an alias of MSR (immediate).
+SMSTOP: Disables access to Streaming SVE mode and SME architectural state: an alias of MSR (immediate).
+SMSUBL: Signed multiply-subtract long.
+SMULH: Signed multiply high.
+SMULL: Signed multiply long: an alias of SMADDL.
+SSBB: Speculative store bypass barrier: an alias of DSB.
+ST2G: Store Allocation Tags.
+ST64B: Single-copy atomic 64-byte store without status result.
+ST64BV: Single-copy atomic 64-byte store with status result.
+ST64BV0: Single-copy atomic 64-byte EL0 store with status result.
+STG: Store Allocation Tag.
+STGM: Store Allocation Tag multiple.
+STGP: Store Allocation Tag and pair of registers.
+STILP: Store-release ordered pair of registers.
+STLLR: Store LORelease register.
+STLLRB: Store LORelease register byte.
+STLLRH: Store LORelease register halfword.
+STLR: Store-release register.
+STLRB: Store-release register byte.
+STLRH: Store-release register halfword.
+STLTXR: Store-release unprivileged exclusive register.
+STLUR: Store-release register (unscaled).
+STLURB: Store-release register byte (unscaled).
+STLURH: Store-release register halfword (unscaled).
+STLXP: Store-release exclusive pair of registers.
+STLXR: Store-release exclusive register.
+STLXRB: Store-release exclusive register byte.
+STLXRH: Store-release exclusive register halfword.
+STNP: Store pair of registers, with non-temporal hint.
+STP: Store pair of registers.
+STSHH: Store shared hint.
+STTNP: Store unprivileged pair of registers, with non-temporal hint.
+STTP: Store unprivileged pair of registers.
+STTR: Store register (unprivileged).
+STTRB: Store register byte (unprivileged).
+STTRH: Store register halfword (unprivileged).
+STTXR: Store unprivileged exclusive register.
+STUR: Store register (unscaled).
+STURB: Store register byte (unscaled).
+STURH: Store register halfword (unscaled).
+STXP: Store exclusive pair of registers.
+STXR: Store exclusive register.
+STXRB: Store exclusive register byte.
+STXRH: Store exclusive register halfword.
+STZ2G: Store Allocation Tags, zeroing.
+STZG: Store Allocation Tag, zeroing.
+STZGM: Store Allocation Tag and zero multiple.
+SUBG: Subtract with tag.
+SUBP: Subtract pointer.
+SUBPS: Subtract pointer, setting flags.
+SUBPT: Subtract checked pointer.
+SVC: Supervisor call.
+SXTB: Signed extend byte: an alias of SBFM.
+SXTH: Sign extend halfword: an alias of SBFM.
+SXTW: Sign extend word: an alias of SBFM.
+SYS: System instruction.
+SYSL: System instruction with result.
+SYSP: 128-bit system instruction.
+TBNZ: Test bit and branch if nonzero.
+TBZ: Test bit and branch if zero.
+TCANCEL: Cancel current transaction.
+TCOMMIT: Commit current transaction.
+TLBI: TLB invalidate operation: an alias of SYS.
+TLBIP: TLB invalidate pair operation: an alias of SYSP.
+TRCIT: Trace instrumentation: an alias of SYS.
+TSB: Trace synchronization barrier.
+TSTART: Start transaction.
+TTEST: Test transaction state.
+UBFIZ: Unsigned bitfield insert in zeros: an alias of UBFM.
+UBFM: Unsigned bitfield move.
+UBFX: Unsigned bitfield extract: an alias of UBFM.
+UDF: Permanently undefined.
+UDIV: Unsigned divide.
+UMADDL: Unsigned multiply-add long.
+UMNEGL: Unsigned multiply-negate long: an alias of UMSUBL.
+UMSUBL: Unsigned multiply-subtract long.
+UMULH: Unsigned multiply high.
+UMULL: Unsigned multiply long: an alias of UMADDL.
+UXTB: Unsigned extend byte: an alias of UBFM.
+UXTH: Unsigned extend halfword: an alias of UBFM.
+WFE: Wait for event.
+WFET: Wait for event with timeout.
+WFI: Wait for interrupt.
+WFIT: Wait for interrupt with timeout.
+XAFLAG: Convert floating-point condition flags from external format to Arm format.
+YIELD: Yield.
+ABS: Absolute value (vector).
+ADDV: Add across vector.
+AESD: AES single round decryption.
+AESE: AES single round encryption.
+AESIMC: AES inverse mix columns.
+AESMC: AES mix columns.
+BCAX: Bit clear and exclusive-OR.
+BFCVT: Single-precision convert to BFloat16 (scalar).
+BIF: Bitwise insert if false.
+BIT: Bitwise insert if true.
+BSL: Bitwise select.
+CMTST: Compare bitwise test bits nonzero (vector).
+CNT: Population count per byte.
+EOR3: Three-way exclusive-OR.
+EXT: Extract vector from pair of vectors.
+FABD: Floating-point absolute difference (vector).
+FACGE: Floating-point absolute compare greater than or equal (vector).
+FACGT: Floating-point absolute compare greater than (vector).
+FAMAX: Floating-point absolute maximum.
+FAMIN: Floating-point absolute minimum.
+FCADD: Floating-point complex add.
+FCCMP: Floating-point conditional quiet compare (scalar).
+FCCMPE: Floating-point conditional signaling compare (scalar).
+FCMLA: Floating-point complex multiply accumulate.
+FCMP: Floating-point quiet compare (scalar).
+FCMPE: Floating-point signaling compare (scalar).
+FCSEL: Floating-point conditional select (scalar).
+FCVT: Floating-point convert precision (scalar).
+FJCVTZS: Floating-point Javascript convert to signed fixed-point, rounding toward zero.
+FMADD: Floating-point fused multiply-add (scalar).
+FMAXNMV: Floating-point maximum number across vector.
+FMAXV: Floating-point maximum across vector.
+FMINNMV: Floating-point minimum number across vector.
+FMINV: Floating-point minimum across vector.
+FMSUB: Floating-point fused multiply-subtract (scalar).
+FMULX: Floating-point multiply extended.
+FNMADD: Floating-point negated fused multiply-add (scalar).
+FNMSUB: Floating-point negated fused multiply-subtract (scalar).
+FRECPE: Floating-point reciprocal estimate.
+FRECPS: Floating-point reciprocal step.
+FRECPX: Floating-point reciprocal exponent (scalar).
+FRSQRTE: Floating-point reciprocal square root estimate.
+FRSQRTS: Floating-point reciprocal square root step.
+FSCALE: Floating-point adjust exponent by vector.
+LD1R: Load one single-element structure and replicate to all lanes (of one register).
+LD2R: Load single 2-element structure and replicate to all lanes of two registers.
+LD3R: Load single 3-element structure and replicate to all lanes of three registers.
+LD4R: Load single 4-element structure and replicate to all lanes of four registers.
+LUTI2: Lookup table read with 2-bit indices.
+LUTI4: Lookup table read with 4-bit indices.
+MOVI: Move immediate (vector).
+MVN: Bitwise NOT (vector): an alias of NOT.
+MVNI: Move inverted immediate (vector).
+NOT: Bitwise NOT (vector).
+PMUL: Polynomial multiply.
+RAX1: Rotate and exclusive-OR.
+REV64: Reverse elements in 64-bit doublewords (vector).
+SABA: Signed absolute difference and accumulate.
+SABD: Signed absolute difference.
+SADALP: Signed add and accumulate long pairwise.
+SADDLP: Signed add long pairwise.
+SADDLV: Signed add long across vector.
+SHA1C: SHA1 hash update (choose).
+SHA1H: SHA1 fixed rotate.
+SHA1M: SHA1 hash update (majority).
+SHA1P: SHA1 hash update (parity).
+SHA1SU0: SHA1 schedule update 0.
+SHA1SU1: SHA1 schedule update 1.
+SHA256H: SHA256 hash update (part 1).
+SHA256H2: SHA256 hash update (part 2).
+SHA256SU0: SHA256 schedule update 0.
+SHA256SU1: SHA256 schedule update 1.
+SHA512H: SHA512 hash update part 1.
+SHA512H2: SHA512 hash update part 2.
+SHA512SU0: SHA512 schedule update 0.
+SHA512SU1: SHA512 schedule update 1.
+SHADD: Signed halving add.
+SHL: Shift left (immediate).
+SHSUB: Signed halving subtract.
+SLI: Shift left and insert (immediate).
+SM3PARTW1: SM3PARTW1.
+SM3PARTW2: SM3PARTW2.
+SM3SS1: SM3SS1.
+SM3TT1A: SM3TT1A.
+SM3TT1B: SM3TT1B.
+SM3TT2A: SM3TT2A.
+SM3TT2B: SM3TT2B.
+SM4E: SM4 encode.
+SM4EKEY: SM4 key.
+SMAX: Signed maximum (vector).
+SMAXP: Signed maximum pairwise.
+SMAXV: Signed maximum across vector.
+SMIN: Signed minimum (vector).
+SMINP: Signed minimum pairwise.
+SMINV: Signed minimum across vector.
+SMOV: Signed move vector element to general-purpose register.
+SQABS: Signed saturating absolute value.
+SQADD: Signed saturating add.
+SQNEG: Signed saturating negate.
+SQRSHL: Signed saturating rounding shift left (register).
+SQSHLU: Signed saturating shift left unsigned (immediate).
+SQSUB: Signed saturating subtract.
+SRHADD: Signed rounding halving add.
+SRI: Shift right and insert (immediate).
+SRSHL: Signed rounding shift left (register).
+SRSHR: Signed rounding shift right (immediate).
+SRSRA: Signed rounding shift right and accumulate (immediate).
+SSHL: Signed shift left (register).
+SSHR: Signed shift right (immediate).
+SSRA: Signed shift right and accumulate (immediate).
+SUQADD: Signed saturating accumulate of unsigned value.
+TBL: Table vector lookup.
+TBX: Table vector lookup extension.
+TRN1: Transpose vectors (primary).
+TRN2: Transpose vectors (secondary).
+UABA: Unsigned absolute difference and accumulate.
+UABD: Unsigned absolute difference (vector).
+UADALP: Unsigned add and accumulate long pairwise.
+UADDLP: Unsigned add long pairwise.
+UADDLV: Unsigned sum long across vector.
+UHADD: Unsigned halving add.
+UHSUB: Unsigned halving subtract.
+UMAX: Unsigned maximum (vector).
+UMAXP: Unsigned maximum pairwise.
+UMAXV: Unsigned maximum across vector.
+UMIN: Unsigned minimum (vector).
+UMINP: Unsigned minimum pairwise.
+UMINV: Unsigned minimum across vector.
+UMOV: Unsigned move vector element to general-purpose register.
+UQADD: Unsigned saturating add.
+UQRSHL: Unsigned saturating rounding shift left (register).
+UQSUB: Unsigned saturating subtract.
+URECPE: Unsigned reciprocal estimate.
+URHADD: Unsigned rounding halving add.
+URSHL: Unsigned rounding shift left (register).
+URSHR: Unsigned rounding shift right (immediate).
+URSQRTE: Unsigned reciprocal square root estimate.
+URSRA: Unsigned rounding shift right and accumulate (immediate).
+USHL: Unsigned shift left (register).
+USHR: Unsigned shift right (immediate).
+USQADD: Unsigned saturating accumulate of signed value.
+USRA: Unsigned shift right and accumulate (immediate).
+UZP1: Unzip vectors (primary).
+UZP2: Unzip vectors (secondary).
+XAR: Exclusive-OR and rotate.
+ZIP1: Zip vectors (primary).
+ZIP2: Zip vectors (secondary).
+ABS: Absolute value (predicated).
+ADCLB: Add with carry long (bottom).
+ADCLT: Add with carry long (top).
+ADDHNB: Add narrow high part (bottom).
+ADDHNT: Add narrow high part (top).
+ADDP: Add pairwise.
+ADDPL: Add multiple of predicate register size to scalar register.
+ADDQV: Add reduction of quadword vector segments.
+ADDVL: Add multiple of vector register size to scalar register.
+ADR: Compute vector address.
+AESDIMC: Multi-vector AES single round decryption and inverse mix columns.
+AESEMC: Multi-vector AES single round encryption and mix columns.
+AESIMC: AES inverse mix columns.
+AESMC: AES mix columns.
+ANDQV: Bitwise AND reduction of quadword vector segments.
+ANDS: Bitwise AND predicates, setting the condition flags.
+ANDV: Bitwise AND reduction to scalar.
+ASRD: Arithmetic shift right for divide by immediate (predicated).
+ASRR: Reversed arithmetic shift right by vector (predicated).
+BCAX: Bitwise clear and exclusive-OR.
+BDEP: Scatter lower bits into positions selected by bitmask.
+BEXT: Gather lower bits from positions selected by bitmask.
+BFCLAMP: BFloat16 clamp to minimum/maximum number.
+BFCVT: Single-precision down convert to BFloat16 format (predicated).
+BFCVTN: BFloat16 convert, narrow and interleave to 8-bit floating-point.
+BFCVTNT: Single-precision down convert and narrow to BFloat16 (top, predicated).
+BFMAX: BFloat16 maximum (predicated).
+BFMAXNM: BFloat16 maximum number (predicated).
+BFMIN: BFloat16 minimum (predicated).
+BFMINNM: BFloat16 minimum number (predicated).
+BFSCALE: BFloat16 adjust exponent (predicated).
+BGRP: Group bits to right or left as selected by bitmask.
+BICS: Bitwise clear predicates, setting the condition flags.
+BRKA: Break after first true condition.
+BRKAS: Break after first true condition, setting the condition flags.
+BRKB: Break before first true condition.
+BRKBS: Break before first true condition, setting the condition flags.
+BRKN: Propagate break to next partition.
+BRKNS: Propagate break to next partition, setting the condition flags.
+BRKPA: Break after first true condition, propagating from previous partition.
+BRKPAS: Break after first true condition, propagating from previous partition and setting the condition flags.
+BRKPB: Break before first true condition, propagating from previous partition.
+BRKPBS: Break before first true condition, propagating from previous partition and setting the condition flags.
+BSL: Bitwise select.
+BSL1N: Bitwise select with first input inverted.
+BSL2N: Bitwise select with second input inverted.
+CADD: Complex integer add with rotate.
+CLS: Count leading sign bits (predicated).
+CLZ: Count leading zero bits (predicated).
+CNOT: Logically invert boolean condition (predicated).
+CNT: Count non-zero bits (predicated).
+COMPACT: Copy Active vector elements to lower-numbered elements.
+DUPM: Broadcast logical bitmask immediate to vector (unpredicated).
+DUPQ: Broadcast indexed element within each quadword vector segment (unpredicated).
+EON: Bitwise exclusive-OR with inverted immediate (unpredicated): an alias of EOR (immediate).
+EOR3: Bitwise exclusive-OR of three vectors.
+EORBT: Interleaving exclusive-OR (bottom, top).
+EORQV: Bitwise exclusive-OR reduction of quadword vector segments.
+EORS: Bitwise exclusive-OR predicates, setting the condition flags.
+EORTB: Interleaving exclusive-OR (top, bottom).
+EORV: Bitwise exclusive-OR reduction to scalar.
+EXPAND: Copy lower-numbered vector elements to Active elements.
+EXT: Extract vector from pair of vectors.
+EXTQ: Extract vector segment from each pair of quadword vector segments.
+FABD: Floating-point absolute difference (predicated).
+FABS: Floating-point absolute value (predicated).
+FACLE: Floating-point absolute compare less than or equal: an alias of FAC<cc>.
+FACLT: Floating-point absolute compare less than: an alias of FAC<cc>.
+FADDA: Floating-point add strictly-ordered reduction, accumulating in scalar.
+FADDP: Floating-point add pairwise.
+FADDQV: Floating-point add recursive reduction of quadword vector segments.
+FADDV: Floating-point add recursive reduction to scalar.
+FAMAX: Floating-point absolute maximum (predicated).
+FAMIN: Floating-point absolute minimum (predicated).
+FCADD: Floating-point complex add with rotate (predicated).
+FCLAMP: Floating-point clamp to minimum/maximum number.
+FCPY: Copy 8-bit floating-point immediate to vector elements (predicated).
+FCVT: Floating-point convert precision (predicated).
+FCVTLT: Floating-point up convert long (top, predicated).
+FCVTN: Half-precision convert, narrow and interleave to 8-bit floating-point.
+FCVTNB: Single-precision convert, narrow and interleave to 8-bit floating-point (bottom).
+FCVTX: Double-precision down convert to single-precision, rounding to odd (predicated).
+FCVTXNT: Double-precision down convert to single-precision, rounding to odd (top, predicated).
+FCVTZS: Floating-point convert to signed integer, rounding toward zero (predicated).
+FCVTZU: Floating-point convert to unsigned integer, rounding toward zero (predicated).
+FDIV: Floating-point divide (predicated).
+FDIVR: Floating-point reversed divide (predicated).
+FDUP: Broadcast 8-bit floating-point immediate to vector elements (unpredicated).
+FEXPA: Floating-point exponential accelerator.
+FIRSTP: Scalar index of first true predicate element (predicated).
+FLOGB: Floating-point base 2 logarithm as integer.
+FMAD: Floating-point fused multiply-add vectors (predicated), writing multiplicand [Zdn = Za + Zdn * Zm].
+FMAXNMP: Floating-point maximum number pairwise.
+FMAXNMQV: Floating-point maximum number recursive reduction of quadword vector segments.
+FMAXNMV: Floating-point maximum number recursive reduction to scalar.
+FMAXP: Floating-point maximum pairwise.
+FMAXQV: Floating-point maximum reduction of quadword vector segments.
+FMAXV: Floating-point maximum recursive reduction to scalar.
+FMINNMP: Floating-point minimum number pairwise.
+FMINNMQV: Floating-point minimum number recursive reduction of quadword vector segments.
+FMINNMV: Floating-point minimum number recursive reduction to scalar.
+FMINP: Floating-point minimum pairwise.
+FMINQV: Floating-point minimum recursive reduction of quadword vector segments.
+FMINV: Floating-point minimum recursive reduction to scalar.
+FMSB: Floating-point fused multiply-subtract vectors (predicated), writing multiplicand [Zdn = Za + -Zdn * Zm].
+FMULX: Floating-point multiply-extended vectors (predicated).
+FNEG: Floating-point negate (predicated).
+FNMAD: Floating-point negated fused multiply-add vectors (predicated), writing multiplicand [Zdn = -Za + -Zdn * Zm].
+FNMLA: Floating-point negated fused multiply-add vectors (predicated), writing addend [Zda = -Zda + -Zn * Zm].
+FNMLS: Floating-point negated fused multiply-subtract vectors (predicated), writing addend [Zda = -Zda + Zn * Zm].
+FNMSB: Floating-point negated fused multiply-subtract vectors (predicated), writing multiplicand [Zdn = -Za + Zdn * Zm].
+FRECPE: Floating-point reciprocal estimate (unpredicated).
+FRECPS: Floating-point reciprocal step (unpredicated).
+FRECPX: Floating-point reciprocal exponent (predicated).
+FRINT32X: Floating-point round to 32-bit integer, using current rounding mode (predicated).
+FRINT32Z: Floating-point round to 32-bit integer, toward zero (predicated).
+FRINT64X: Floating-point round to 64-bit integer, using current rounding mode (predicated).
+FRINT64Z: Floating-point round to 64-bit integer, toward zero (predicated).
+FRSQRTE: Floating-point reciprocal square root estimate (unpredicated).
+FRSQRTS: Floating-point reciprocal square root step (unpredicated).
+FSCALE: Floating-point adjust exponent (predicated).
+FSQRT: Floating-point square root (predicated).
+FTMAD: Floating-point trigonometric multiply-add coefficient.
+FTSMUL: Floating-point trigonometric starting value.
+FTSSEL: Floating-point trigonometric select coefficient.
+HISTCNT: Count matching elements in vector.
+HISTSEG: Count matching elements in vector segments.
+LASTP: Scalar index of last true predicate element (predicated).
+LD1Q: Gather load quadwords.
+LD1RB: Load and broadcast unsigned byte to vector.
+LD1RD: Load and broadcast doubleword to vector.
+LD1RH: Load and broadcast unsigned halfword to vector.
+LD1RSB: Load and broadcast signed byte to vector.
+LD1RSH: Load and broadcast signed halfword to vector.
+LD1RSW: Load and broadcast signed word to vector.
+LD1RW: Load and broadcast unsigned word to vector.
+LDNF1B: Contiguous load non-fault unsigned bytes to vector (immediate index).
+LDNF1D: Contiguous load non-fault doublewords to vector (immediate index).
+LDNF1H: Contiguous load non-fault unsigned halfwords to vector (immediate index).
+LDNF1SB: Contiguous load non-fault signed bytes to vector (immediate index).
+LDNF1SH: Contiguous load non-fault signed halfwords to vector (immediate index).
+LDNF1SW: Contiguous load non-fault signed words to vector (immediate index).
+LDNF1W: Contiguous load non-fault unsigned words to vector (immediate index).
+LDNT1SB: Gather load non-temporal signed bytes.
+LDNT1SH: Gather load non-temporal signed halfwords.
+LDNT1SW: Gather load non-temporal signed words.
+LSLR: Reversed logical shift left by vector (predicated).
+LSRR: Reversed logical shift right by vector (predicated).
+MAD: Multiply-add vectors (predicated), writing multiplicand [Zdn = Za + Zdn * Zm].
+MADPT: Multiply-add checked pointer vectors, writing multiplicand [Zdn = Za + Zdn * Zm].
+MATCH: Detect any matching elements, setting the condition flags.
+MLAPT: Multiply-add checked pointer vectors, writing addend [Zda = Zda + Zn * Zm].
+MOV: Move logical bitmask immediate to vector (unpredicated): an alias of DUPM.
+MOV: Move predicate (unpredicated): an alias of ORR (predicates).
+MSB: Multiply-subtract vectors (predicated), writing multiplicand [Zdn = Za - Zdn * Zm].
+NAND: Bitwise NAND predicates.
+NANDS: Bitwise NAND predicates, setting the condition flags.
+NBSL: Bitwise inverted select.
+NEG: Negate (predicated).
+NMATCH: Detect no matching elements, setting the condition flags.
+NOR: Bitwise NOR predicates.
+NORS: Bitwise NOR predicates, setting the condition flags.
+NOTS: Bitwise invert predicate, setting the condition flags: an alias of EORS.
+ORNS: Bitwise inclusive OR inverted predicate, setting the condition flags.
+ORQV: Bitwise inclusive OR reduction of quadword vector segments.
+ORRS: Bitwise inclusive OR predicates, setting the condition flags.
+ORV: Bitwise inclusive OR reduction to scalar.
+PFALSE: Set all predicate elements to false.
+PFIRST: Set the First active predicate element to true.
+PMLAL: Multi-vector polynomial multiply long and accumulate.
+PMUL: Polynomial multiply (unpredicated).
+PMULL: Multi-vector polynomial multiply long.
+PMULLB: Polynomial multiply long (bottom).
+PMULLT: Polynomial multiply long (top).
+PNEXT: Find next active predicate.
+PSEL: Predicate select between predicate register or all-false.
+PTEST: Set condition flags for predicate.
+PTRUES: Initialize predicate from named constraint and set the condition flags.
+RADDHNB: Rounding add narrow high part (bottom).
+RADDHNT: Rounding add narrow high part (top).
+RAX1: Bitwise rotate left by 1 and exclusive-OR.
+RBIT: Reverse bits (predicated).
+RDFFRS: Return predicate of succesfully loaded elements, setting the condition flags.
+RDVL: Read multiple of vector register size to scalar register.
+REVD: Reverse 64-bit doublewords in elements (predicated).
+RSHRNB: Rounding shift right narrow by immediate (bottom).
+RSHRNT: Rounding shift right narrow by immediate (top).
+RSUBHNB: Rounding subtract narrow high part (bottom).
+RSUBHNT: Rounding subtract narrow high part (top).
+SABA: Signed absolute difference and accumulate.
+SABALB: Signed absolute difference and accumulate long (bottom).
+SABALT: Signed absolute difference and accumulate long (top).
+SABD: Signed absolute difference (predicated).
+SABDLB: Signed absolute difference long (bottom).
+SABDLT: Signed absolute difference long (top).
+SADALP: Signed add and accumulate long pairwise.
+SADDLB: Signed add long (bottom).
+SADDLBT: Signed add long (bottom + top).
+SADDLT: Signed add long (top).
+SADDV: Signed add reduction to scalar.
+SADDWB: Signed add wide (bottom).
+SADDWT: Signed add wide (top).
+SBCLB: Subtract with carry long (bottom).
+SBCLT: Subtract with carry long (top).
+SCLAMP: Signed clamp to minimum/maximum.
+SDIV: Signed divide (predicated).
+SDIVR: Signed reversed divide (predicated).
+SETFFR: Initialize the first-fault register to all true.
+SHADD: Signed halving addition.
+SHRNB: Shift right narrow by immediate (bottom).
+SHRNT: Shift right narrow by immediate (top).
+SHSUB: Signed halving subtract.
+SHSUBR: Signed halving subtract reversed.
+SLI: Shift left and insert (immediate).
+SM4E: SM4 encryption and decryption.
+SM4EKEY: SM4 key updates.
+SMAXP: Signed maximum pairwise.
+SMAXQV: Signed maximum reduction of quadword vector segments.
+SMAXV: Signed maximum reduction to scalar.
+SMINP: Signed minimum pairwise.
+SMINQV: Signed minimum reduction of quadword vector segments.
+SMINV: Signed minimum reduction to scalar.
+SMMLA: Signed 8-bit integer matrix multiply-accumulate to 32-bit integer.
+SPLICE: Splice two vectors under predicate control.
+SQABS: Signed saturating absolute value.
+SQCADD: Saturating complex integer add with rotate.
+SQCVTN: Signed 32-bit integer saturating extract narrow and interleave to 16-bit integer.
+SQCVTUN: Signed 32-bit integer saturating unsigned extract narrow and interleave to 16-bit integer.
+SQDECB: Signed saturating decrement scalar by multiple of 8-bit predicate constraint element count.
+SQDMLALBT: Signed saturating doubling multiply-add long to accumulator (bottom × top).
+SQDMLSLBT: Signed saturating doubling multiply-subtract long from accumulator (bottom × top).
+SQINCB: Signed saturating increment scalar by multiple of 8-bit predicate constraint element count.
+SQNEG: Signed saturating negate.
+SQRSHL: Signed saturating rounding shift left (predicated).
+SQRSHLR: Signed saturating rounding shift left reversed (predicated).
+SQRSHRN: Signed saturating rounding shift right narrow by immediate and interleave.
+SQRSHRNB: Signed saturating rounding shift right narrow by immediate (bottom).
+SQRSHRNT: Signed saturating rounding shift right narrow by immediate (top).
+SQRSHRUN: Signed saturating rounding shift right unsigned narrow by immediate and interleave.
+SQRSHRUNB: Signed saturating rounding shift right unsigned narrow by immediate (bottom).
+SQRSHRUNT: Signed saturating rounding shift right unsigned narrow by immediate (top).
+SQSHLR: Signed saturating shift left reversed (predicated).
+SQSHLU: Signed saturating shift left unsigned by immediate.
+SQSHRNB: Signed saturating shift right narrow by immediate (bottom).
+SQSHRNT: Signed saturating shift right narrow by immediate (top).
+SQSHRUNB: Signed saturating shift right unsigned narrow by immediate (bottom).
+SQSHRUNT: Signed saturating shift right unsigned narrow by immediate (top).
+SQSUBR: Signed saturating subtraction reversed (predicated).
+SQXTNB: Signed saturating extract narrow (bottom).
+SQXTNT: Signed saturating extract narrow (top).
+SQXTUNB: Signed saturating unsigned extract narrow (bottom).
+SQXTUNT: Signed saturating unsigned extract narrow (top).
+SRHADD: Signed rounding halving addition.
+SRI: Shift right and insert (immediate).
+SRSHL: Signed rounding shift left (predicated).
+SRSHLR: Signed rounding shift left reversed (predicated).
+SRSHR: Signed rounding shift right by immediate.
+SRSRA: Signed rounding shift right and accumulate (immediate).
+SSHLLB: Signed shift left long by immediate (bottom).
+SSHLLT: Signed shift left long by immediate (top).
+SSRA: Signed shift right and accumulate (immediate).
+SSUBLB: Signed subtract long (bottom).
+SSUBLBT: Signed subtract long (bottom - top).
+SSUBLT: Signed subtract long (top).
+SSUBLTB: Signed subtract long (top - bottom).
+SSUBWB: Signed subtract wide (bottom).
+SSUBWT: Signed subtract wide (top).
+ST1Q: Scatter store quadwords.
+SUBHNB: Subtract narrow high part (bottom).
+SUBHNT: Subtract narrow high part (top).
+SUDOT: Signed by unsigned 8-bit integer indexed dot product to 32-bit integer.
+SUQADD: Signed saturating addition of unsigned value.
+TBL: Programmable table lookup in one or two vector table (zeroing).
+TBLQ: Programmable table lookup within each quadword vector segment (zeroing).
+TBX: Programmable table lookup in single vector table (merging).
+TBXQ: Programmable table lookup within each quadword vector segment (merging).
+UABA: Unsigned absolute difference and accumulate.
+UABALB: Unsigned absolute difference and accumulate long (bottom).
+UABALT: Unsigned absolute difference and accumulate long (top).
+UABD: Unsigned absolute difference (predicated).
+UABDLB: Unsigned absolute difference long (bottom).
+UABDLT: Unsigned absolute difference long (top).
+UADALP: Unsigned add and accumulate long pairwise.
+UADDLB: Unsigned add long (bottom).
+UADDLT: Unsigned add long (top).
+UADDV: Unsigned add reduction to scalar.
+UADDWB: Unsigned add wide (bottom).
+UADDWT: Unsigned add wide (top).
+UCLAMP: Unsigned clamp to minimum/maximum.
+UDIV: Unsigned divide (predicated).
+UDIVR: Unsigned reversed divide (predicated).
+UHADD: Unsigned halving addition.
+UHSUB: Unsigned halving subtract.
+UHSUBR: Unsigned halving subtract reversed.
+UMAXP: Unsigned maximum pairwise.
+UMAXQV: Unsigned maximum reduction of quadword vector segments.
+UMAXV: Unsigned maximum reduction to scalar.
+UMINP: Unsigned minimum pairwise.
+UMINQV: Unsigned minimum reduction of quadword vector segments.
+UMINV: Unsigned minimum reduction to scalar.
+UMMLA: Unsigned 8-bit integer matrix multiply-accumulate to 32-bit integer.
+UQCVTN: Unsigned 32-bit integer saturating extract narrow and interleave to 16-bit integer.
+UQDECB: Unsigned saturating decrement scalar by multiple of 8-bit predicate constraint element count.
+UQINCB: Unsigned saturating increment scalar by multiple of 8-bit predicate constraint element count.
+UQRSHL: Unsigned saturating rounding shift left (predicated).
+UQRSHLR: Unsigned saturating rounding shift left reversed (predicated).
+UQRSHRN: Unsigned saturating rounding shift right narrow by immediate and interleave.
+UQRSHRNB: Unsigned saturating rounding shift right narrow by immediate (bottom).
+UQRSHRNT: Unsigned saturating rounding shift right narrow by immediate (top).
+UQSHLR: Unsigned saturating shift left reversed (predicated).
+UQSHRNB: Unsigned saturating shift right narrow by immediate (bottom).
+UQSHRNT: Unsigned saturating shift right narrow by immediate (top).
+UQSUBR: Unsigned saturating subtraction reversed (predicated).
+UQXTNB: Unsigned saturating extract narrow (bottom).
+UQXTNT: Unsigned saturating extract narrow (top).
+URECPE: Unsigned reciprocal estimate (predicated).
+URHADD: Unsigned rounding halving addition.
+URSHL: Unsigned rounding shift left (predicated).
+URSHLR: Unsigned rounding shift left reversed (predicated).
+URSHR: Unsigned rounding shift right by immediate.
+URSQRTE: Unsigned reciprocal square root estimate (predicated).
+URSRA: Unsigned rounding shift right and accumulate (immediate).
+USHLLB: Unsigned shift left long by immediate (bottom).
+USHLLT: Unsigned shift left long by immediate (top).
+USMMLA: Unsigned by signed 8-bit integer matrix multiply-accumulate to 32-bit integer.
+USQADD: Unsigned saturating addition of signed value.
+USRA: Unsigned shift right and accumulate (immediate).
+USUBLB: Unsigned subtract long (bottom).
+USUBLT: Unsigned subtract long (top).
+USUBWB: Unsigned subtract wide (bottom).
+USUBWT: Unsigned subtract wide (top).
+UZPQ1: Concatenate even elements within each pair of quadword vector segments.
+UZPQ2: Concatenate odd elements within each pair of quadword vector segments.
+WHILERW: While free of read-after-write conflicts.
+WHILEWR: While free of write-after-read/write conflicts.
+WRFFR: Write the first-fault register.
+XAR: Bitwise exclusive-OR and rotate right by immediate.
+ZIPQ1: Interleave elements from low halves of each pair of quadword vector segments.
+ZIPQ2: Interleave elements from high halves of each pair of quadword vector segments.
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+UNPREDICTABLE:
+ADDHA: Add horizontally vector elements to ZA tile.
+ADDSPL: Add multiple of Streaming SVE predicate register size to scalar register.
+ADDSVL: Add multiple of Streaming SVE vector register size to scalar register.
+ADDVA: Add vertically vector elements to ZA tile.
+BFADD: BFloat16 add multi-vector to ZA array vector accumulators.
+BFCLAMP: Multi-vector BFloat16 clamp to minimum/maximum number.
+BFCVTN: Multi-vector convert from single-precision to interleaved BFloat16 format.
+BFSUB: BFloat16 subtract multi-vector from ZA array vector accumulators.
+BFVDOT: Multi-vector BFloat16 vertical dot-product by indexed element.
+BMOPA: Bitwise exclusive NOR population count outer product and accumulate.
+BMOPS: Bitwise exclusive NOR population count outer product and subtract.
+FADD: Floating-point add multi-vector to ZA array vector accumulators.
+FAMAX: Multi-vector floating-point absolute maximum.
+FAMIN: Multi-vector floating-point absolute minimum.
+FCLAMP: Multi-vector floating-point clamp to minimum/maximum number.
+FCVTL: Multi-vector convert from half-precision to deinterleaved single-precision.
+FCVTZS: Multi-vector floating-point convert to signed integer, rounding toward zero.
+FCVTZU: Multi-vector floating-point convert to unsigned integer, rounding toward zero.
+FRINTA: Multi-vector floating-point round to integral value, to nearest with ties away from zero.
+FRINTM: Multi-vector floating-point round to integral value, toward minus Infinity.
+FRINTN: Multi-vector floating-point round to integral value, to nearest with ties to even.
+FRINTP: Multi-vector floating-point round to integral value, toward plus Infinity.
+FSUB: Floating-point subtract multi-vector from ZA array vector accumulators.
+FVDOTB: Multi-vector 8-bit floating-point vertical dot-product by indexed element to single-precision (bottom).
+FVDOTT: Multi-vector 8-bit floating-point vertical dot-product by indexed element to single-precision (top).
+LD1Q: Contiguous load of quadwords to 128-bit element ZA tile slice.
+RDSVL: Read multiple of Streaming SVE vector register size to scalar register.
+SCLAMP: Multi-vector signed clamp to minimum/maximum.
+SCVTF: Multi-vector signed integer convert to floating-point.
+SEL: Multi-vector conditionally select elements from two vectors.
+SQCVTN: Multi-vector signed saturating extract narrow and interleave.
+SQCVTUN: Multi-vector signed saturating unsigned extract narrow and interleave.
+SQRSHRN: Multi-vector signed saturating rounding shift right narrow by immediate and interleave.
+SQRSHRUN: Multi-vector signed saturating rounding shift right unsigned narrow by immediate and interleave.
+ST1Q: Contiguous store of quadwords from 128-bit element ZA tile slice.
+SUMOP4A: Signed by unsigned integer quarter-tile sums of four outer products, accumulating.
+SUMOP4S: Signed by unsigned integer quarter-tile sums of four outer products, subtracting.
+SUMOPS: Signed by unsigned integer sum of outer products and subtract.
+SUNPK: Unpack and sign-extend multi-vector elements.
+SUTMOPA: Signed by unsigned integer sparse sum of four outer products, accumulating.
+SUVDOT: Multi-vector signed by unsigned integer vertical dot-product by indexed element.
+UCLAMP: Multi-vector unsigned clamp to minimum/maximum.
+UCVTF: Multi-vector unsigned integer convert to floating-point.
+UQCVTN: Multi-vector unsigned saturating extract narrow and interleave.
+UQRSHRN: Multi-vector unsigned saturating rounding shift right narrow by immediate and interleave.
+USMOP4A: Unsigned by signed integer quarter-tile sums of four outer products, accumulating.
+USMOP4S: Unsigned by signed integer quarter-tile sums of four outer products, subtracting.
+USMOPS: Unsigned by signed integer sum of outer products and subtract.
+USTMOPA: Unsigned by signed integer sparse sum of four outer products, accumulating.
+USVDOT: Multi-vector unsigned by signed integer vertical dot-product by indexed element.
+UUNPK: Unpack and zero-extend multi-vector elements.

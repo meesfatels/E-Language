@@ -1,0 +1,666 @@
+- **ABS**: Absolute value
+- **ADC**: Add with carry
+- **ADCS**: Add with carry, setting flags
+- **ADD (extended register)**: Add extended and scaled register
+- **ADD (immediate)**: Add immediate value
+- **ADD (immediate)**: Add immediate value  
+- **ADD (shifted register)**: Add optionally-shifted register
+- **ADD (SVE)**: SVE add
+- **ADD (vector)**: Vector add
+- **ADDG**: Add with tag
+- **ADDPT**: Add checked pointer
+- **ADDS (extended register)**: Add extended and scaled register, setting flags
+- **ADDS (immediate)**: Add immediate value, setting flags
+- **ADDS (shifted register)**: Add optionally-shifted register, setting flags
+- **ADR**: Form PC-relative address
+- **ADRP**: Form PC-relative address to 4KB page
+- **AESD**: AES single round decryption
+- **AESE**: AES single round encryption
+- **AESIMC**: AES inverse mix columns
+- **AESMC**: AES mix columns
+- **AND (immediate)**: Bitwise AND (immediate)
+- **AND (shifted register)**: Bitwise AND (shifted register)
+- **AND (SVE)**: SVE bitwise AND
+- **AND (vector)**: Vector bitwise AND
+- **ANDS (immediate)**: Bitwise AND (immediate), setting flags
+- **ANDS (shifted register)**: Bitwise AND (shifted register), setting flags
+- **APAS**: Associate physical address space (alias of SYS)
+- **ASR (immediate)**: Arithmetic shift right (immediate) (alias of SBFM)
+- **ASR (register)**: Arithmetic shift right (register) (alias of ASRV)
+- **ASRV**: Arithmetic shift right variable
+- **AT**: Address translate (alias of SYS)
+- **AUTDA, AUTDZA**: Authenticate data address, using key A
+- **AUTDB, AUTDZB**: Authenticate data address, using key B
+- **AUTIA, AUTIA1716, AUTIASP, AUTIAZ, AUTIZA**: Authenticate instruction address, using key A
+- **AUTIA171615**: Authenticate instruction address, using key A
+- **AUTIASPPC**: Authenticate return address using key A, using an immediate offset
+- **AUTIASPPCR**: Authenticate return address using key A, using a register
+- **AUTIB, AUTIB1716, AUTIBSP, AUTIBZ, AUTIZB**: Authenticate instruction address, using key B
+- **AUTIB171615**: Authenticate instruction address, using key B
+- **AUTIBSPPC**: Authenticate return address using key B, using an immediate offset
+- **AUTIBSPPCR**: Authenticate return address using key B, using a register
+- **AXFLAG**: Convert floating-point condition flags from Arm to external format
+- **B.cond**: Branch conditionally
+- **B**: Branch
+- **BC.cond**: Branch consistent conditionally
+- **BFC**: Bitfield clear (alias of BFM)
+- **BFI**: Bitfield insert (alias of BFM)
+- **BFM**: Bitfield move
+- **BFXIL**: Bitfield extract and insert at low end (alias of BFM)
+- **BIC (shifted register)**: Bitwise bit clear (shifted register)
+- **BICS (shifted register)**: Bitwise bit clear (shifted register), setting flags
+- **BL**: Branch with link
+- **BLR**: Branch with link to register
+- **BLRAA, BLRAAZ, BLRAB, BLRABZ**: Branch with link to register, with pointer authentication
+- **BR**: Branch to register
+- **BRAA, BRAAZ, BRAB, BRABZ**: Branch to register, with pointer authentication
+- **BRB**: Branch record buffer (alias of SYS)
+- **BRK**: Breakpoint instruction
+- **BTI**: Branch target identification
+- **CAS, CASA, CASAL, CASL**: Compare and swap word or doubleword in memory
+- **CASB, CASAB, CASALB, CASLB**: Compare and swap byte in memory
+- **CASH, CASAH, CASALH, CASLH**: Compare and swap halfword in memory
+- **CASP, CASPA, CASPAL, CASPL**: Compare and swap pair of words or doublewords in memory
+- **CASPT, CASPAT, CASPALT, CASPLT**: Compare and swap pair unprivileged
+- **CAST, CASAT, CASALT, CASLT**: Compare and swap unprivileged
+- **CB<cc> (immediate)**: Compare register with immediate and branch
+- **CB<cc> (register)**: Compare registers and branch
+- **CBB<cc>**: Compare bytes and branch
+- **CBBLE**: Compare signed less than or equal bytes and branch
+- **CBBLO**: Compare unsigned lower than bytes and branch
+- **CBBLS**: Compare unsigned lower than or equal bytes and branch
+- **CBBLT**: Compare signed less than bytes and branch
+- **CBGE (immediate)**: Compare signed greater than or equal immediate and branch
+- **CBH<cc>**: Compare halfwords and branch
+- **CBHLE**: Compare signed less than or equal halfwords and branch
+- **CBHLO**: Compare unsigned lower than halfwords and branch
+- **CBHLS**: Compare unsigned lower than or equal halfwords and branch
+- **CBHLT**: Compare signed less than halfwords and branch
+- **CBHS (immediate)**: Compare unsigned greater than or equal immediate and branch
+- **CBLE (immediate)**: Compare signed less than or equal immediate and branch
+- **CBLE (register)**: Compare signed less than or equal register and branch
+- **CBLO (register)**: Compare unsigned lower than register and branch
+- **CBLS (immediate)**: Compare unsigned lower than or equal immediate and branch
+- **CBLS (register)**: Compare unsigned lower than or equal register and branch
+- **CBLT (register)**: Compare signed less than register and branch
+- **CBNZ**: Compare and branch on nonzero
+- **CBZ**: Compare and branch on zero
+- **CCMN (immediate)**: Conditional compare negative (immediate)
+- **CCMN (register)**: Conditional compare negative (register)
+- **CCMP (immediate)**: Conditional compare (immediate)
+- **CCMP (register)**: Conditional compare (register)
+- **CFINV**: Invert carry flag
+- **CFP**: Control flow prediction restriction by context (alias of SYS)
+- **CHKFEAT**: Check feature status
+- **CINC**: Conditional increment (alias of CSINC)
+- **CINV**: Conditional invert (alias of CSINV)
+- **CLRBHB**: Clear branch history
+- **CLREX**: Clear exclusive
+- **CLS**: Count leading sign bits
+- **CLZ**: Count leading zeros
+- **CMN (extended register)**: Compare negative (extended register) (alias of ADDS)
+- **CMN (immediate)**: Compare negative (immediate) (alias of ADDS)
+- **CMN (shifted register)**: Compare negative (shifted register) (alias of ADDS)
+- **CMP (extended register)**: Compare (extended register) (alias of SUBS)
+- **CMP (immediate)**: Compare (immediate) (alias of SUBS)
+- **CMP (shifted register)**: Compare (shifted register) (alias of SUBS)
+- **CMPP**: Compare with tag (alias of SUBPS)
+- **CNEG**: Conditional negate (alias of CSNEG)
+- **CNT**: Count bits
+- **CNTB**: SVE count predicate bits
+- **CNTB**: SVE count predicate bits (byte)
+- **CNTD**: SVE count predicate bits (doubleword)
+- **CNTH**: SVE count predicate bits (halfword)
+- **CNTP**: SVE count predicate bits (predicate)
+- **CNTR**: SVE count predicate bits (register)
+- **CNTW**: SVE count predicate bits (word)
+- **CNTZ**: SVE count predicate bits (zero)
+- **CNTZP**: SVE count predicate bits (zero, predicate)
+- **CNTZR**: SVE count predicate bits (zero, register)
+- **Common use cases** - When and how to use each instruction
+- **COSP**: Clear other speculative prediction restriction by context (alias of SYS)
+- **CPP**: Cache prefetch prediction restriction by context (alias of SYS)
+- **CPYFP, CPYFM, CPYFE**: Memory copy forward-only
+- **CPYFPN, CPYFMN, CPYFEN**: Memory copy forward-only, reads and writes non-temporal
+- **CPYFPRN, CPYFMRN, CPYFERN**: Memory copy forward-only, reads non-temporal
+- **CPYFPRT, CPYFMRT, CPYFERT**: Memory copy forward-only, reads unprivileged
+- **CPYFPRTN, CPYFMRTN, CPYFERTN**: Memory copy forward-only, reads unprivileged, reads and writes non-temporal
+- **CPYFPRTRN, CPYFMRTRN, CPYFERTRN**: Memory copy forward-only, reads unprivileged and non-temporal
+- **CPYFPRTWN, CPYFMRTWN, CPYFERTWN**: Memory copy forward-only, reads unprivileged, writes non-temporal
+- **CPYFPT, CPYFMT, CPYFET**: Memory copy forward-only, reads and writes unprivileged
+- **CPYFPTN, CPYFMTN, CPYFETN**: Memory copy forward-only, reads and writes unprivileged and non-temporal
+- **CPYFPTRN, CPYFMTRN, CPYFETRN**: Memory copy forward-only, reads and writes unprivileged, reads non-temporal
+- **CPYFPTWN, CPYFMTWN, CPYFETWN**: Memory copy forward-only, reads and writes unprivileged, writes non-temporal
+- **CPYFPWN, CPYFMWN, CPYFEWN**: Memory copy forward-only, writes non-temporal
+- **CPYFPWT, CPYFMWT, CPYFEWT**: Memory copy forward-only, writes unprivileged
+- **CPYFPWTN, CPYFMWTN, CPYFEWTN**: Memory copy forward-only, writes unprivileged, reads and writes non-temporal
+- **CPYFPWTRN, CPYFMWTRN, CPYFEWTRN**: Memory copy forward-only, writes unprivileged, reads non-temporal
+- **CPYFPWTWN, CPYFMWTWN, CPYFEWTWN**: Memory copy forward-only, writes unprivileged and non-temporal
+- **CPYP, CPYM, CPYE**: Memory copy
+- **CPYPN, CPYMN, CPYEN**: Memory copy, reads and writes non-temporal
+- **CPYPRN, CPYMRN, CPYERN**: Memory copy, reads non-temporal
+- **CPYPRT, CPYMRT, CPYERT**: Memory copy, reads unprivileged
+- **CPYPRTN, CPYMRTN, CPYERTN**: Memory copy, reads unprivileged, reads and writes non-temporal
+- **CPYPRTRN, CPYMRTRN, CPYERTRN**: Memory copy, reads unprivileged and non-temporal
+- **CPYPRTWN, CPYMRTWN, CPYERTWN**: Memory copy, reads unprivileged, writes non-temporal
+- **CPYPT, CPYMT, CPYET**: Memory copy, reads and writes unprivileged
+- **CPYPTN, CPYMTN, CPYETN**: Memory copy, reads and writes unprivileged and non-temporal
+- **CPYPTRN, CPYMTRN, CPYETRN**: Memory copy, reads and writes unprivileged, reads non-temporal
+- **CPYPTWN, CPYMTWN, CPYETWN**: Memory copy, reads and writes unprivileged, writes non-temporal
+- **CPYPWN, CPYMWN, CPYEWN**: Memory copy, writes non-temporal
+- **CPYPWT, CPYMWT, CPYEWT**: Memory copy, writes unprivileged
+- **CPYPWTN, CPYMWTN, CPYEWTN**: Memory copy, writes unprivileged, reads and writes non-temporal
+- **CPYPWTRN, CPYMWTRN, CPYEWTRN**: Memory copy, writes unprivileged, reads non-temporal
+- **CPYPWTWN, CPYMWTWN, CPYEWTWN**: Memory copy, writes unprivileged and non-temporal
+- **CRC32B, CRC32H, CRC32W, CRC32X**: CRC32 checksum
+- **CRC32CB, CRC32CH, CRC32CW, CRC32CX**: CRC32C checksum
+- **CSDB**: Consumption of speculative data barrier
+- **CSEL**: Conditional select
+- **CSET**: Conditional set (alias of CSINC)
+- **CSETM**: Conditional set mask (alias of CSINV)
+- **CSINC**: Conditional select increment
+- **CSINV**: Conditional select invert
+- **CSNEG**: Conditional select negation
+- **CTZ**: Count trailing zeros
+- **DC**: Data cache operation (alias of SYS)
+- **DCPS1**: Debug change PE state to EL1
+- **DCPS2**: Debug change PE state to EL2
+- **DCPS3**: Debug change PE state to EL3
+- **DGH**: Data gathering hint
+- **DMB**: Data memory barrier
+- **DRPS**: Debug restore PE state
+- **DSB**: Data synchronization barrier
+- **DUP (SVE)**: SVE duplicate
+- **DUP (vector)**: Vector duplicate
+- **DVP**: Data value prediction restriction by context (alias of SYS)
+- **EON (shifted register)**: Bitwise exclusive-OR NOT (shifted register)
+- **EOR (immediate)**: Bitwise exclusive-OR (immediate)
+- **EOR (shifted register)**: Bitwise exclusive-OR (shifted register)
+- **EOR (SVE)**: SVE bitwise exclusive-OR
+- **EOR (vector)**: Vector bitwise exclusive-OR
+- **ERET**: Exception return
+- **ERETAA, ERETAB**: Exception return, with pointer authentication
+- **ESB**: Error synchronization barrier
+- **Example implementations** - Working code examples
+- **EXT (SVE)**: SVE extract
+- **EXT (vector)**: Vector extract
+- **EXTR**: Extract register
+- **FABS (scalar)**: Floating-point absolute value (scalar)
+- **FABS (vector)**: Vector floating-point absolute value
+- **FADD (scalar)**: Floating-point add (scalar)
+- **FADD (vector)**: Vector floating-point add
+- **FCMP (scalar)**: Floating-point compare (scalar)
+- **FCMP (vector)**: Vector floating-point compare
+- **FCMPE (scalar)**: Floating-point compare with exception (scalar)
+- **FCMPE (vector)**: Vector floating-point compare with exception
+- **FCVT (vector)**: Vector floating-point convert
+- **FCVT**: Floating-point convert
+- **FCVTAS**: Floating-point convert to signed integer, round to nearest with ties to away
+- **FCVTAU**: Floating-point convert to unsigned integer, round to nearest with ties to away
+- **FCVTMS**: Floating-point convert to signed integer, round toward minus infinity
+- **FCVTMU**: Floating-point convert to unsigned integer, round toward minus infinity
+- **FCVTNS**: Floating-point convert to signed integer, round to nearest with ties to even
+- **FCVTNU**: Floating-point convert to unsigned integer, round to nearest with ties to even
+- **FCVTPS**: Floating-point convert to signed integer, round toward plus infinity
+- **FCVTPU**: Floating-point convert to unsigned integer, round toward plus infinity
+- **FCVTZS**: Floating-point convert to signed integer, round toward zero
+- **FCVTZU**: Floating-point convert to unsigned integer, round toward zero
+- **FDIV (scalar)**: Floating-point divide (scalar)
+- **FDIV (vector)**: Vector floating-point divide
+- **FMOV (scalar)**: Floating-point move (scalar)
+- **FMOV (vector)**: Vector floating-point move
+- **FMUL (scalar)**: Floating-point multiply (scalar)
+- **FMUL (vector)**: Vector floating-point multiply
+- **FNEG (scalar)**: Floating-point negate (scalar)
+- **FNEG (vector)**: Vector floating-point negate
+- **FRINTA (vector)**: Vector floating-point round to integer, round to nearest with ties to away
+- **FRINTA**: Floating-point round to integer, round to nearest with ties to away
+- **FRINTI (vector)**: Vector floating-point round to integer, round to nearest with ties to even
+- **FRINTI**: Floating-point round to integer, round to nearest with ties to even
+- **FRINTM (vector)**: Vector floating-point round to integer, round toward minus infinity
+- **FRINTM**: Floating-point round to integer, round toward minus infinity
+- **FRINTN (vector)**: Vector floating-point round to integer, round to nearest with ties to even
+- **FRINTN**: Floating-point round to integer, round to nearest with ties to even
+- **FRINTP (vector)**: Vector floating-point round to integer, round toward plus infinity
+- **FRINTP**: Floating-point round to integer, round toward plus infinity
+- **FRINTX (vector)**: Vector floating-point round to integer, round to nearest with ties to even
+- **FRINTX**: Floating-point round to integer, round to nearest with ties to even
+- **FRINTZ (vector)**: Vector floating-point round to integer, round toward zero
+- **FRINTZ**: Floating-point round to integer, round toward zero
+- **FSQRT (scalar)**: Floating-point square root (scalar)
+- **FSQRT (vector)**: Vector floating-point square root
+- **FSUB (scalar)**: Floating-point subtract (scalar)
+- **FSUB (vector)**: Vector floating-point subtract
+- **GCSB**: Guarded Control Stack barrier
+- **GCSPOPCX**: Guarded Control Stack pop and compare exception return record (alias of SYS)
+- **GCSPOPM**: Guarded Control Stack pop (alias of SYSL)
+- **GCSPOPX**: Guarded Control Stack pop exception return record (alias of SYS)
+- **GCSPUSHM**: Guarded Control Stack push (alias of SYS)
+- **GCSPUSHX**: Guarded Control Stack push exception return record (alias of SYS)
+- **GCSSS1**: Guarded Control Stack switch stack 1 (alias of SYS)
+- **GCSSS2**: Guarded Control Stack switch stack 2 (alias of SYSL)
+- **GCSSTR**: Guarded Control Stack store register
+- **GCSSTTR**: Guarded Control Stack store register (unprivileged)
+- **GMI**: Tag mask insert
+- **HINT**: Hint instruction
+- **HLT**: Halt instruction
+- **HVC**: Hypervisor call
+- **IC**: Instruction cache operation (alias of SYS)
+- **INS (SVE)**: SVE insert
+- **INS (vector)**: Vector insert
+- **Integration with E language** - How it fits into your compiler
+- **IRG**: Insert random tag
+- **ISB**: Instruction synchronization barrier
+- **LD1 (multiple structures)**: Load multiple structures
+- **LD1 (single structure)**: Load single structure
+- **LD1 (SVE)**: SVE load single structure
+- **LD2 (multiple structures)**: Load multiple 2-element structures
+- **LD3 (multiple structures)**: Load multiple 3-element structures
+- **LD4 (multiple structures)**: Load multiple 4-element structures
+- **LD64B**: Single-copy atomic 64-byte Load
+- **LDADD, LDADDA, LDADDAL, LDADDL**: Atomic add on word or doubleword in memory
+- **LDADDB, LDADDAB, LDADDALB, LDADDLB**: Atomic add on byte in memory
+- **LDADDH, LDADDAH, LDADDALH, LDADDLH**: Atomic add on halfword in memory
+- **LDAPR**: Load-acquire RCpc register
+- **LDAPRB**: Load-acquire RCpc register byte
+- **LDAPRH**: Load-acquire RCpc register halfword
+- **LDAPUR**: Load-acquire RCpc register (unscaled)
+- **LDAPURB**: Load-acquire RCpc register byte (unscaled)
+- **LDAPURH**: Load-acquire RCpc register halfword (unscaled)
+- **LDAPURSB**: Load-acquire RCpc register signed byte (unscaled)
+- **LDAPURSH**: Load-acquire RCpc register signed halfword (unscaled)
+- **LDAPURSW**: Load-acquire RCpc register signed word (unscaled)
+- **LDAR**: Load-acquire register
+- **LDARB**: Load-acquire register byte
+- **LDARH**: Load-acquire register halfword
+- **LDATXR**: Load-acquire unprivileged exclusive register
+- **LDAXP**: Load-acquire exclusive pair of registers
+- **LDAXR**: Load-acquire exclusive register
+- **LDAXRB**: Load-acquire exclusive register byte
+- **LDAXRH**: Load-acquire exclusive register halfword
+- **LDCLR, LDCLRA, LDCLRAL, LDCLRL**: Atomic bit clear on word or doubleword in memory
+- **LDCLRB, LDCLRAB, LDCLRALB, LDCLRLB**: Atomic bit clear on byte in memory
+- **LDCLRH, LDCLRAH, LDCLRALH, LDCLRLH**: Atomic bit clear on halfword in memory
+- **LDCLRP, LDCLRPA, LDCLRPAL, LDCLRPL**: Atomic bit clear on quadword in memory
+- **LDEOR, LDEORA, LDEORAL, LDEORL**: Atomic exclusive-OR on word or doubleword in memory
+- **LDEORB, LDEORAB, LDEORALB, LDEORLB**: Atomic exclusive-OR on byte in memory
+- **LDEORH, LDEORAH, LDEORALH, LDEORLH**: Atomic exclusive-OR on halfword in memory
+- **LDG**: Load Allocation Tag
+- **LDGM**: Load tag multiple
+- **LDIAPP**: Load-Acquire RCpc ordered pair of registers
+- **LDLAR**: Load LOAcquire register
+- **LDLARB**: Load LOAcquire register byte
+- **LDLARH**: Load LOAcquire register halfword
+- **LDNP**: Load pair of registers, with non-temporal hint
+- **LDP**: Load pair of registers
+- **LDPSW**: Load pair of registers signed word
+- **LDR (immediate)**: Load register (immediate)
+- **LDR (literal)**: Load register (literal)
+- **LDR (register)**: Load register (register)
+- **LDRAA, LDRAB**: Load register, with pointer authentication
+- **LDRB (immediate)**: Load register byte (immediate)
+- **LDRB (register)**: Load register byte (register)
+- **LDRH (immediate)**: Load register halfword (immediate)
+- **LDRH (register)**: Load register halfword (register)
+- **LDRSB (immediate)**: Load register signed byte (immediate)
+- **LDRSB (register)**: Load register signed byte (register)
+- **LDRSH (immediate)**: Load register signed halfword (immediate)
+- **LDRSH (register)**: Load register signed halfword (register)
+- **LDRSW (immediate)**: Load register signed word (immediate)
+- **LDRSW (literal)**: Load register signed word (literal)
+- **LDRSW (register)**: Load register signed word (register)
+- **LDSET, LDSETA, LDSETAL, LDSETL**: Atomic bit set on word or doubleword in memory
+- **LDSETB, LDSETAB, LDSETALB, LDSETLB**: Atomic bit set on byte in memory
+- **LDSETH, LDSETAH, LDSETALH, LDSETLH**: Atomic bit set on halfword in memory
+- **LDSETP, LDSETPA, LDSETPAL, LDSETPL**: Atomic bit set on quadword in memory
+- **LDSMAX, LDSMAXA, LDSMAXAL, LDSMAXL**: Atomic signed maximum on word or doubleword in memory
+- **LDSMAXB, LDSMAXAB, LDSMAXALB, LDSMAXLB**: Atomic signed maximum on byte in memory
+- **LDSMAXH, LDSMAXAH, LDSMAXALH, LDSMAXLH**: Atomic signed maximum on halfword in memory
+- **LDSMIN, LDSMINA, LDSMINAL, LDSMINL**: Atomic signed minimum on word or doubleword in memory
+- **LDSMINB, LDSMINAB, LDSMINALB, LDSMINLB**: Atomic signed minimum on byte in memory
+- **LDSMINH, LDSMINAH, LDSMINALH, LDSMINLH**: Atomic signed minimum on halfword in memory
+- **LDTADD, LDTADDA, LDTADDAL, LDTADDL**: Atomic add unprivileged
+- **LDTCLR, LDTCLRA, LDTCLRAL, LDTCLRL**: Atomic bit clear unprivileged
+- **LDTNP**: Load unprivileged pair of registers, with non-temporal hint
+- **LDTP**: Load unprivileged pair of registers
+- **LDTR**: Load register (unprivileged)
+- **LDTRB**: Load register byte (unprivileged)
+- **LDTRH**: Load register halfword (unprivileged)
+- **LDTRSB**: Load register signed byte (unprivileged)
+- **LDTRSH**: Load register signed halfword (unprivileged)
+- **LDTRSW**: Load register signed word (unprivileged)
+- **LDTSET, LDTSETA, LDTSETAL, LDTSETL**: Atomic bit set unprivileged
+- **LDTXR**: Load unprivileged exclusive register
+- **LDUMAX, LDUMAXA, LDUMAXAL, LDUMAXL**: Atomic unsigned maximum on word or doubleword in memory
+- **LDUMAXB, LDUMAXAB, LDUMAXALB, LDUMAXLB**: Atomic unsigned maximum on byte in memory
+- **LDUMAXH, LDUMAXAH, LDUMAXALH, LDUMAXLH**: Atomic unsigned maximum on halfword in memory
+- **LDUMIN, LDUMINA, LDUMINAL, LDUMINL**: Atomic unsigned minimum on word or doubleword in memory
+- **LDUMINB, LDUMINAB, LDUMINALB, LDUMINLB**: Atomic unsigned minimum on byte in memory
+- **LDUMINH, LDUMINAH, LDUMINALH, LDUMINLH**: Atomic unsigned minimum on halfword in memory
+- **LDUR**: Load register (unscaled)
+- **LDURB**: Load register byte (unscaled)
+- **LDURH**: Load register halfword (unscaled)
+- **LDURSB**: Load register signed byte (unscaled)
+- **LDURSH**: Load register signed halfword (unscaled)
+- **LDURSW**: Load register signed word (unscaled)
+- **LDXP**: Load exclusive pair of registers
+- **LDXR**: Load exclusive register
+- **LDXRB**: Load exclusive register byte
+- **LDXRH**: Load exclusive register halfword
+- **LSL (immediate)**: Logical shift left (immediate) (alias of UBFM)
+- **LSL (register)**: Logical shift left (register) (alias of LSLV)
+- **LSLV**: Logical shift left variable
+- **LSR (immediate)**: Logical shift right (immediate) (alias of UBFM)
+- **LSR (register)**: Logical shift right (register) (alias of LSRV)
+- **LSRV**: Logical shift right variable
+- **MADD**: Multiply-add
+- **MADDPT**: Multiply-add checked pointer
+- **MNEG**: Multiply-negate (alias of MSUB)
+- **MOV (bitmask immediate)**: Move bitmask immediate value (alias of ORR)
+- **MOV (inverted wide immediate)**: Move inverted wide immediate value (alias of MOVN)
+- **MOV (register)**: Move register value (alias of ORR)
+- **MOV (to/from SP)**: Move register value to or from SP (alias of ADD)
+- **MOV (wide immediate)**: Move wide immediate value (alias of MOVZ)
+- **MOVK**: Move wide with keep
+- **MOVN**: Move wide with NOT
+- **MOVZ**: Move wide with zero
+- **MRRS**: Move System register to two adjacent general-purpose registers
+- **MRS**: Move System register to general-purpose register
+- **MSR (immediate)**: Move immediate value to special register
+- **MSR (register)**: Move general-purpose register to System register
+- **MSRR**: Move two adjacent general-purpose registers to System register
+- **MSUB**: Multiply-subtract
+- **MSUBPT**: Multiply-subtract checked pointer
+- **MUL (SVE)**: SVE multiply
+- **MUL (vector)**: Vector multiply
+- **MUL**: Multiply (alias of MADD)
+- **MVN**: Bitwise NOT (alias of ORN)
+- **NEG (shifted register)**: Negate (shifted register) (alias of SUB)
+- **NEGS**: Negate, setting flags (alias of SUBS)
+- **NGC**: Negate with carry (alias of SBC)
+- **NGCS**: Negate with carry, setting flags (alias of SBCS)
+- **NOP**: No operation
+- **NOT (SVE)**: SVE bitwise NOT
+- **NOT (vector)**: Vector bitwise NOT
+- **ORN (shifted register)**: Bitwise OR NOT (shifted register)
+- **ORR (immediate)**: Bitwise OR (immediate)
+- **ORR (shifted register)**: Bitwise OR (shifted register)
+- **ORR (SVE)**: SVE bitwise OR
+- **ORR (vector)**: Vector bitwise OR
+- **PACDA, PACDZA**: Pointer Authentication Code for data address, using key A
+- **PACDB, PACDZB**: Pointer Authentication Code for data address, using key B
+- **PACGA**: Pointer Authentication Code, using generic key
+- **PACIA, PACIA1716, PACIASP, PACIAZ, PACIZA**: Pointer Authentication Code for instruction address, using key A
+- **PACIA171615**: Pointer Authentication Code for instruction address, using key A
+- **PACIASPPC**: Pointer Authentication Code for return address, using key A
+- **PACIB, PACIB1716, PACIBSP, PACIBZ, PACIZB**: Pointer Authentication Code for instruction address, using key B
+- **PACIB171615**: Pointer Authentication Code for instruction address, using key B
+- **PACIBSPPC**: Pointer Authentication Code for return address, using key B
+- **PACM**: Pointer authentication modifier
+- **PACNBIASPPC**: Pointer Authentication Code for return address, using key A, not a branch target
+- **PACNBIBSPPC**: Pointer Authentication Code for return address, using key B, not a branch target
+- **PMULL**: Polynomial multiply long
+- **PMULL2**: Polynomial multiply long (top)
+- **PRFM (immediate)**: Prefetch memory (immediate)
+- **PRFM (literal)**: Prefetch memory (literal)
+- **PRFM (register)**: Prefetch memory (register)
+- **PRFUM**: Prefetch memory (unscaled offset)
+- **PSB**: Profiling synchronization barrier
+- **PSSBB**: Physical speculative store bypass barrier (alias of DSB)
+- **RBIT**: Reverse bits
+- **RCWCAS, RCWCASA, RCWCASAL, RCWCASL**: Read check write compare and swap doubleword in memory
+- **RCWCASP, RCWCASPA, RCWCASPAL, RCWCASPL**: Read check write compare and swap quadword in memory
+- **RCWCLR, RCWCLRA, RCWCLRAL, RCWCLRL**: Read check write atomic bit clear on doubleword in memory
+- **RCWCLRP, RCWCLRPA, RCWCLRPAL, RCWCLRPL**: Read check write atomic bit clear on quadword in memory
+- **RCWSCAS, RCWSCASA, RCWSCASAL, RCWSCASL**: Read check write software compare and swap doubleword in memory
+- **RCWSCASP, RCWSCASPA, RCWSCASPAL, RCWSCASPL**: Read check write software compare and swap quadword in memory
+- **RCWSCLR, RCWSCLRA, RCWSCLRAL, RCWSCLRL**: Read check write software atomic bit clear on doubleword in memory
+- **RCWSCLRP, RCWSCLRPA, RCWSCLRPAL, RCWSCLRPL**: Read check write software atomic bit clear on quadword in memory
+- **RCWSET, RCWSETA, RCWSETAL, RCWSETL**: Read check write atomic bit set on doubleword in memory
+- **RCWSETP, RCWSETPA, RCWSETPAL, RCWSETPL**: Read check write atomic bit set on quadword in memory
+- **RCWSSET, RCWSSETA, RCWSSETAL, RCWSSETL**: Read check write software atomic bit set on doubleword in memory
+- **RCWSSETP, RCWSSETPA, RCWSSETPAL, RCWSSETPL**: Read check write software atomic bit set on quadword in memory
+- **RCWSSWP, RCWSSWPA, RCWSSWPAL, RCWSSWPL**: Read check write software swap doubleword in memory
+- **RCWSSWPP, RCWSSWPPA, RCWSSWPPAL, RCWSSWPPL**: Read check write software swap quadword in memory
+- **RCWSWP, RCWSWPA, RCWSWPAL, RCWSWPL**: Read check write swap doubleword in memory
+- **RCWSWPP, RCWSWPPA, RCWSWPPAL, RCWSWPPL**: Read check write swap quadword in memory
+- **RET**: Return from subroutine
+- **RETAA, RETAB**: Return from subroutine, with pointer authentication
+- **RETAASPPC, RETABSPPC**: Return from subroutine, with enhanced pointer authentication using an immediate offset
+- **RETAASPPCR, RETABSPPCR**: Return from subroutine, with enhanced pointer authentication using a register
+- **REV (SVE)**: SVE reverse 8-bit elements
+- **REV (vector)**: Vector reverse 8-bit elements
+- **REV**: Reverse bytes
+- **REV16 (SVE)**: SVE reverse 16-bit elements
+- **REV16 (vector)**: Vector reverse 16-bit elements
+- **REV16**: Reverse bytes in 16-bit halfwords
+- **REV32 (SVE)**: SVE reverse 32-bit elements
+- **REV32 (vector)**: Vector reverse 32-bit elements
+- **REV32**: Reverse bytes in 32-bit words
+- **REV64 (SVE)**: SVE reverse 64-bit elements
+- **REV64 (vector)**: Vector reverse 64-bit elements
+- **REV64**: Reverse bytes (alias of REV)
+- **RMIF**: Rotate, mask insert flags
+- **ROR (immediate)**: Rotate right (immediate) (alias of EXTR)
+- **ROR (register)**: Rotate right (register) (alias of RORV)
+- **RORV**: Rotate right variable
+- **RPRFM**: Range prefetch memory
+- **SB**: Speculation barrier
+- **SBC**: Subtract with carry
+- **SBCS**: Subtract with carry, setting flags
+- **SBFIZ**: Signed bitfield insert in zeros (alias of SBFM)
+- **SBFM**: Signed bitfield move
+- **SBFX**: Signed bitfield extract (alias of SBFM)
+- **SCVTF (vector)**: Vector signed integer to floating-point convert
+- **SCVTF**: Signed integer to floating-point convert
+- **SDIV**: Signed divide
+- **SETF8, SETF16**: Evaluation of 8-bit or 16-bit flag values
+- **SETGP, SETGM, SETGE**: Memory set with tag setting
+- **SETGPN, SETGMN, SETGEN**: Memory set with tag setting, non-temporal
+- **SETGPT, SETGMT, SETGET**: Memory set with tag setting, unprivileged
+- **SETGPTN, SETGMTN, SETGETN**: Memory set with tag setting, unprivileged and non-temporal
+- **SETP, SETM, SETE**: Memory set
+- **SETPN, SETMN, SETEN**: Memory set, non-temporal
+- **SETPT, SETMT, SETET**: Memory set, unprivileged
+- **SETPTN, SETMTN, SETETN**: Memory set, unprivileged and non-temporal
+- **SEV**: Send event
+- **SEVL**: Send event local
+- **SHA1C**: SHA1 hash update (choose)
+- **SHA1H**: SHA1 fixed rotate
+- **SHA1M**: SHA1 hash update (majority)
+- **SHA1P**: SHA1 hash update (parity)
+- **SHA1SU0**: SHA1 schedule update 0
+- **SHA1SU1**: SHA1 schedule update 1
+- **SHA256H**: SHA256 hash update (high)
+- **SHA256H2**: SHA256 hash update (high, part 2)
+- **SHA256SU0**: SHA256 schedule update 0
+- **SHA256SU1**: SHA256 schedule update 1
+- **SHL (SVE)**: SVE shift left
+- **SHL (vector)**: Vector shift left
+- **SHR (SVE)**: SVE shift right
+- **SHR (vector)**: Vector shift right
+- **SMADDL**: Signed multiply-add long
+- **SMAX (immediate)**: Signed maximum (immediate)
+- **SMAX (register)**: Signed maximum (register)
+- **SMC**: Secure monitor call
+- **SMIN (immediate)**: Signed minimum (immediate)
+- **SMIN (register)**: Signed minimum (register)
+- **SMNEGL**: Signed multiply-negate long (alias of SMSUBL)
+- **SMOV (SVE)**: SVE signed move vector element to general-purpose register
+- **SMOV**: Signed move vector element to general-purpose register
+- **SMSUBL**: Signed multiply-subtract long
+- **SMULH**: Signed multiply high
+- **SMULL**: Signed multiply long (alias of SMADDL)
+- **SSBB**: Speculative store bypass barrier (alias of DSB)
+- **SSHLL (SVE)**: SVE signed shift left long
+- **SSHLL (vector)**: Vector signed shift left long
+- **SSHLL2 (vector)**: Vector signed shift left long (top)
+- **SSHR (SVE)**: SVE signed shift right
+- **SSHR (vector)**: Vector signed shift right
+- **ST1 (multiple structures)**: Store multiple structures
+- **ST1 (single structure)**: Store single structure
+- **ST1 (SVE)**: SVE store single structure
+- **ST2 (multiple structures)**: Store multiple 2-element structures
+- **ST2G**: Store Allocation Tags
+- **ST3 (multiple structures)**: Store multiple 3-element structures
+- **ST4 (multiple structures)**: Store multiple 4-element structures
+- **ST64B**: Single-copy atomic 64-byte store without status result
+- **ST64BV**: Single-copy atomic 64-byte store with status result
+- **ST64BV0**: Single-copy atomic 64-byte EL0 store with status result
+- **STADD, STADDL**: Atomic add on word or doubleword in memory, without return
+- **STADDB, STADDLB**: Atomic add on byte in memory, without return
+- **STADDH, STADDLH**: Atomic add on halfword in memory, without return
+- **STCLR, STCLRL**: Atomic bit clear on word or doubleword in memory, without return
+- **STCLRB, STCLRLB**: Atomic bit clear on byte in memory, without return
+- **STCLRH, STCLRLH**: Atomic bit clear on halfword in memory, without return
+- **STEOR, STEORL**: Atomic exclusive-OR on word or doubleword in memory, without return
+- **STEORB, STEORLB**: Atomic exclusive-OR on byte in memory, without return
+- **STEORH, STEORLH**: Atomic exclusive-OR on halfword in memory, without return
+- **STG**: Store Allocation Tag
+- **STGM**: Store Allocation Tag multiple
+- **STGP**: Store Allocation Tag and pair of registers
+- **STLR**: Store-release register
+- **STLRB**: Store-release register byte
+- **STLRH**: Store-release register halfword
+- **STLUR**: Store-release register (unscaled)
+- **STLURB**: Store-release register byte (unscaled)
+- **STLURH**: Store-release register halfword (unscaled)
+- **STLXP**: Store-release exclusive pair of registers
+- **STLXR**: Store-release exclusive register
+- **STLXRB**: Store-release exclusive register byte
+- **STLXRH**: Store-release exclusive register halfword
+- **STNP**: Store pair of registers, with non-temporal hint
+- **STP**: Store pair of registers
+- **STR (immediate)**: Store register (immediate)
+- **STR (register)**: Store register (register)
+- **STRB (immediate)**: Store register byte (immediate)
+- **STRB (register)**: Store register byte (register)
+- **STRH (immediate)**: Store register halfword (immediate)
+- **STRH (register)**: Store register halfword (register)
+- **STSET, STSETL**: Atomic bit set on word or doubleword in memory, without return
+- **STSETB, STSETLB**: Atomic bit set on byte in memory, without return
+- **STSETH, STSETLH**: Atomic bit set on halfword in memory, without return
+- **STSMAX, STSMAXL**: Atomic signed maximum on word or doubleword in memory, without return
+- **STSMAXB, STSMAXLB**: Atomic signed maximum on byte in memory, without return
+- **STSMAXH, STSMAXLH**: Atomic signed maximum on halfword in memory, without return
+- **STSMIN, STSMINL**: Atomic signed minimum on word or doubleword in memory, without return
+- **STSMINB, STSMINLB**: Atomic signed minimum on byte in memory, without return
+- **STSMINH, STSMINLH**: Atomic signed minimum on halfword in memory, without return
+- **STTADD, STTADDL**: Atomic add unprivileged, without return
+- **STTCLR, STTCLRL**: Atomic bit clear unprivileged, without return
+- **STTNP**: Store unprivileged pair of registers, with non-temporal hint
+- **STTP**: Store unprivileged pair of registers
+- **STTR**: Store register (unprivileged)
+- **STTRB**: Store register byte (unprivileged)
+- **STTRH**: Store register halfword (unprivileged)
+- **STTSET, STTSETL**: Atomic bit set unprivileged, without return
+- **STTXR**: Store unprivileged exclusive register
+- **STUMAX, STUMAXL**: Atomic unsigned maximum on word or doubleword in memory, without return
+- **STUMAXB, STUMAXLB**: Atomic unsigned maximum on byte in memory, without return
+- **STUMAXH, STUMAXLH**: Atomic unsigned maximum on halfword in memory, without return
+- **STUMIN, STUMINL**: Atomic unsigned minimum on word or doubleword in memory, without return
+- **STUMINB, STUMINLB**: Atomic unsigned minimum on byte in memory, without return
+- **STUMINH, STUMINLH**: Atomic unsigned minimum on halfword in memory, without return
+- **STUR**: Store register (unscaled)
+- **STURB**: Store register byte (unscaled)
+- **STURH**: Store register halfword (unscaled)
+- **STXP**: Store exclusive pair of registers
+- **STXR**: Store exclusive register
+- **STXRB**: Store exclusive register byte
+- **STXRH**: Store exclusive register halfword
+- **STZ2G**: Store Allocation Tags, zeroing
+- **STZG**: Store Allocation Tag, zeroing
+- **STZGM**: Store Allocation Tag and zero multiple
+- **SUB (extended register)**: Subtract extended and scaled register
+- **SUB (immediate)**: Subtract immediate value
+- **SUB (shifted register)**: Subtract optionally-shifted register
+- **SUB (SVE)**: SVE subtract
+- **SUB (vector)**: Vector subtract
+- **SUBG**: Subtract with tag
+- **SUBP**: Subtract pointer
+- **SUBPS**: Subtract pointer, setting flags
+- **SUBPT**: Subtract checked pointer
+- **SUBS (extended register)**: Subtract extended and scaled register, setting flags
+- **SUBS (immediate)**: Subtract immediate value, setting flags
+- **SUBS (shifted register)**: Subtract optionally-shifted register, setting flags
+- **SVC**: Supervisor call
+- **SWP, SWPA, SWPAL, SWPL**: Swap word or doubleword in memory
+- **SWPB, SWPAB, SWPALB, SWPLB**: Swap byte in memory
+- **SWPH, SWPAH, SWPALH, SWPLH**: Swap halfword in memory
+- **SWPP, SWPPA, SWPPAL, SWPPL**: Swap quadword in memory
+- **SWPT, SWPTA, SWPTAL, SWPTL**: Swap unprivileged
+- **SXTB**: Signed extend byte (alias of SBFM)
+- **SXTH**: Sign extend halfword (alias of SBFM)
+- **SXTW**: Sign extend word (alias of SBFM)
+- **Syntax and usage** - Proper ARM64 assembly syntax
+- **SYS**: System instruction
+- **SYSL**: System instruction with result
+- **SYSP**: 128-bit system instruction
+- **TBL (SVE)**: SVE table lookup
+- **TBL (vector)**: Vector table lookup
+- **TBNZ**: Test bit and branch if nonzero
+- **TBX (SVE)**: SVE table lookup extension
+- **TBX (vector)**: Vector table lookup extension
+- **TBZ**: Test bit and branch if zero
+- **TCANCEL**: Cancel current transaction
+- **TCOMMIT**: Commit current transaction
+- **TLBI**: TLB invalidate operation (alias of SYS)
+- **TLBIP**: TLB invalidate pair operation (alias of SYSP)
+- **TRCIT**: Trace instrumentation (alias of SYS)
+- **TRN1 (SVE)**: SVE transpose (first)
+- **TRN1 (vector)**: Vector transpose (first)
+- **TRN2 (SVE)**: SVE transpose (second)
+- **TRN2 (vector)**: Vector transpose (second)
+- **TSB**: Trace synchronization barrier
+- **TST (immediate)**: Test bits (immediate) (alias of ANDS)
+- **TST (shifted register)**: Test (shifted register) (alias of ANDS)
+- **TSTART**: Start transaction
+- **TTEST**: Test transaction state
+- **UBFIZ**: Unsigned bitfield insert in zeros (alias of UBFM)
+- **UBFM**: Unsigned bitfield move
+- **UBFX**: Unsigned bitfield extract (alias of UBFM)
+- **UCVTF (vector)**: Vector unsigned integer to floating-point convert
+- **UCVTF**: Unsigned integer to floating-point convert
+- **UDF**: Permanently undefined
+- **UDIV**: Unsigned divide
+- **UMADDL**: Unsigned multiply-add long
+- **UMAX (immediate)**: Unsigned maximum (immediate)
+- **UMAX (register)**: Unsigned maximum (register)
+- **UMIN (immediate)**: Unsigned minimum (immediate)
+- **UMIN (register)**: Unsigned minimum (register)
+- **UMNEGL**: Unsigned multiply-negate long (alias of UMSUBL)
+- **UMOV (SVE)**: SVE unsigned move vector element to general-purpose register
+- **UMOV**: Unsigned move vector element to general-purpose register
+- **UMSUBL**: Unsigned multiply-subtract long
+- **UMULH**: Unsigned multiply high
+- **UMULL**: Unsigned multiply long (alias of UMADDL)
+- **USHLL (SVE)**: SVE unsigned shift left long
+- **USHLL (vector)**: Vector unsigned shift left long
+- **USHLL2 (vector)**: Vector unsigned shift left long (top)
+- **USHR (SVE)**: SVE unsigned shift right
+- **USHR (vector)**: Vector unsigned shift right
+- **UXTB**: Unsigned extend byte (alias of UBFM)
+- **UXTH**: Unsigned extend halfword (alias of UBFM)
+- **UZP1 (SVE)**: SVE unpair (first)
+- **UZP1 (vector)**: Vector unpair (first)
+- **UZP2 (SVE)**: SVE unpair (second)
+- **UZP2 (vector)**: Vector unpair (second)
+- **WFE**: Wait for event
+- **WFET**: Wait for event with timeout
+- **WFI**: Wait for interrupt
+- **WFIT**: Wait for interrupt with timeout
+- **WHILEGE**: SVE while incrementing signed scalar greater than or equal
+- **WHILEGT**: SVE while incrementing signed scalar greater than
+- **WHILEHI**: SVE while incrementing unsigned scalar higher than
+- **WHILEHS**: SVE while incrementing unsigned scalar higher than or equal
+- **WHILELE**: SVE while incrementing signed scalar less than or equal
+- **WHILELO**: SVE while incrementing unsigned scalar lower than
+- **WHILELS**: SVE while incrementing unsigned scalar less than or equal
+- **WHILELT**: SVE while incrementing signed scalar less than
+- **XAFLAG**: Convert floating-point condition flags from external format to Arm format
+- **XPACD, XPACI, XPACLRI**: Strip Pointer Authentication Code
+- **YIELD**: Yield
+- **ZIP1 (SVE)**: SVE interleave (first)
+- **ZIP1 (vector)**: Vector interleave (first)
+- **ZIP2 (SVE)**: SVE interleave (second)
+- **ZIP2 (vector)**: Vector interleave (second)
